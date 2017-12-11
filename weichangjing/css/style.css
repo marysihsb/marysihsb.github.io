@@ -45,7 +45,7 @@ body {
 
 /* .s1*/
 
-.s1 {
+.s1,.s2,.s3,.s4,.s5,.s6,.s7 {
     background: url("../img/bj.png");
     height: 100%;
 }
@@ -58,29 +58,34 @@ body {
     width: 35px;
     top: 120px;
     left: 50px;
+    animation:rubberBand infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
+    animation:rubberBand infinite;
 }
 
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
+    animation:rubberBand infinite;
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
     bottom: 210px;
+    animation:rubberBand infinite;
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
     top: 25%;
     width: 60%;
     margin-left: -30%;
+    animation:pulse infinite;
 }
 /*首页文字部分*/
 .s1 .main{
@@ -136,3 +141,249 @@ body {
     left: -90px;
 }
 /*第二屏内容*/
+.s2 {
+    color: #00f0c3;
+}
+.s2 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s2 h2::before,
+.s2 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s2 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s2 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s2 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.s2 img {
+    width: 80%;
+}
+.s2 .main {
+    position: relative;
+}
+.s2 .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 14px;
+}
+.s2 .text p {
+    margin-bottom: 10px;
+}
+.s2 span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 120px;
+    height: 30px;
+    margin-left: -60px;
+    background: -moz-linear-gradient(left, #00e7f7, #00fc9f); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00e7f7), to(#00fc9f)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00e7f7, #00fc9f); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00e7f7, #00fc9f); /*Opera11*/
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+/*第三屏内容*/
+.s3 {
+    color: #00f0c3;
+}
+.s3 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s3 h2::before,
+.s3 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s3 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s3 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s3 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+/*第四屏内容*/
+.s4 {
+    color: #00f0c3;
+}
+.s4 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s4 h2::before,
+.s4 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s4 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s4 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s4 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+/*第五屏内容*/
+.s5 {
+    color: #00f0c3;
+}
+.s5 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s5 h2::before,
+.s5 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s5 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s5 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s5 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+/*第六屏内容*/
+.s6 {
+    color: #00f0c3;
+}
+.s6 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s6 h2::before,
+.s6 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s6 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s6 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s6 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+/*第七屏内容*/
+.s7 {
+    color: #00f0c3;
+}
+.s7 h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+.s7 h2::before,
+.s7 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s7 h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+.s7 h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+.s7 h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
