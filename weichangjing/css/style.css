@@ -426,6 +426,24 @@ body {
     bottom: 29%;
     right: 26%;
 }
+.s3 .text .left{
+    width: 5px;
+    height: 60px;
+    background-color: #03f1d1;
+    position: absolute;
+    bottom:13%;
+    left: 10%;
+}
+.s3 .text .top{
+    position: absolute;
+    bottom: 18%;
+    left: 14%;
+}
+.s3 .text .down{
+    position: absolute;
+    bottom: 13%;
+    left: 14%;
+}
 .s3 .footer{
     position: absolute;
     bottom:0;
