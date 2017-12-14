@@ -1157,25 +1157,23 @@ body {
     height: 50px;
     border:1px solid #00f0c3;
     text-align: center;
+    left: 15%;
 }
 .s7 .main input:nth-of-type(1){
     position: absolute;
     top: 10%;
-    left: 13%;
 }
 .s7 .main input:nth-of-type(2){
     position: absolute;
     top: 25%;
-    left: 13%;
 }
 .s7 .main input:nth-of-type(3){
     position: absolute;
     top: 40%;
-    left: 13%;
 }.s7 .main button{
      position: absolute;
      top: 55%;
-     left: 13%;
+     left: 15%;
  }
 .s7 .main button{
     width: 290px;
@@ -1187,12 +1185,12 @@ body {
 .s7 .main span:nth-of-type(1){
     position: absolute;
     top: 73%;
-    left: 20%;
+    left: 22%;
 }
 .s7 .main span:nth-of-type(2) {
     position: absolute;
     top:80%;
-    left:17%;
+    left:19%;
 }
 .s7 .footer p img{
     position: absolute;
