@@ -26,7 +26,7 @@ body {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
+    transform-origin: 0 0;
 }
 
 /*自定义样式  - 开始*/
@@ -90,6 +90,8 @@ body {
 .s1,.s2,.s3,.s4,.s5,.s6,.s7 {
     background: url("../img/bj.png");
     height: 100%;
+    transition-duration: 0ms;
+    transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px);
 }
 
 .s1 .header img{
@@ -1153,10 +1155,10 @@ body {
     height: 70px;
 }
 .s7 .main input{
-    width: 290px;
+    width: 68%;
     height: 50px;
     border:1px solid #00f0c3;
-    text-align: center;
+    padding-left:30px;
     left: 15%;
 }
 .s7 .main input:nth-of-type(1){
@@ -1176,7 +1178,7 @@ body {
      left: 15%;
  }
 .s7 .main button{
-    width: 290px;
+    width: 68%;
     height: 50px;
     background-color: #00f0c3;
     border:1px solid #00f0c3;
