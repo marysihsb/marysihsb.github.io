@@ -90,8 +90,6 @@ body {
 .s1,.s2,.s3,.s4,.s5,.s6,.s7 {
     background: url("../img/bj.png");
     height: 100%;
-    transition-duration: 0ms;
-    transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px);
 }
 
 .s1 .header img{
