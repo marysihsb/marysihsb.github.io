@@ -34,8 +34,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84588444">
-              <caret line="1192" column="11" selection-start-line="1192" selection-start-column="11" selection-end-line="1192" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.55166376">
+              <caret line="1172" column="18" selection-start-line="1172" selection-start-column="18" selection-end-line="1172" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="466" />
-    <option name="y" value="79" />
+    <option name="x" value="197" />
+    <option name="y" value="43" />
     <option name="width" value="1302" />
     <option name="height" value="762" />
   </component>
@@ -221,8 +221,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="466" y="79" width="1302" height="762" extended-state="0" />
-    <editor active="true" />
+    <frame x="197" y="43" width="1302" height="762" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16376582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -412,8 +412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84588444">
-          <caret line="1192" column="11" selection-start-line="1192" selection-start-column="11" selection-end-line="1192" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.55166376">
+          <caret line="1172" column="18" selection-start-line="1172" selection-start-column="18" selection-end-line="1172" selection-end-column="18" />
           <folding />
         </state>
       </provider>
