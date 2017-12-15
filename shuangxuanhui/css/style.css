@@ -170,3 +170,75 @@ body {
     left: 30%;
     color:#dc9f2a;
 }
+/*第二屏内容*/
+.s2 .main img{
+    width: 80%;
+    top: 12%;
+    left: 10%;
+}
+.s2 .main{
+    position: relative;
+    top: 15%;
+}
+.s2 h1{
+    color:#dc9f2a;
+    position: absolute;
+    top: 6%;
+    left: 32%;
+}
+.s2 .text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+    margin:auto;
+    text-align: left;
+    padding:5%;
+    font-size: 14px;
+    color: #dc9f2a;
+    margin-top:10%;
+}
+.s2 .text p:nth-of-type(1){
+    margin-top: 30px;
+}
+.s2 .text p{
+    margin-bottom: 20px;
+}
+.s2 .text img{
+    position: absolute;
+    width: 60%;
+    top: -35%;
+    left: 20%;
+    animation: pulse 2s infinite;
+}
+/*第三屏内容*/
+.s3 .main img:nth-of-type(1){
+    width: 60%;
+    top: -22%;
+    left: 20%;
+    animation: pulse 2s infinite;
+    position: absolute;
+}
+.s3 .main img:nth-of-type(2){
+    width: 80%;
+    top: 12%;
+    left: 10%;
+}
+.s3 .main{
+    position: relative;
+    top: 15%;
+}
+.s3 h1{
+    color:#dc9f2a;
+    position: absolute;
+    top: 6%;
+    left: 32%;
+}
+.s3 .text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+}
