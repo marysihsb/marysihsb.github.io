@@ -103,12 +103,6 @@ body {
     height: 100%;
     width: 100%;
 }
-.s5{
-    background: url("../img/5.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
 /*第一屏样式*/
 .s1 .main img{
     position: absolute;
@@ -213,7 +207,7 @@ body {
     animation: pulse 2s infinite;
 }
 /*第三屏内容*/
-.s3 .main img:nth-of-type(1){
+.s3 .main .xiaohuo{
     width: 60%;
     top: -22%;
     left: 20%;
@@ -235,10 +229,115 @@ body {
     top: 6%;
     left: 32%;
 }
-.s3 .text{
+.s3 .img img{
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+}
+.s3 .img img:nth-of-type(1){
+    width: 35%;
+    top: 25%;
+    left: 43%;
+}
+.s3 .img img:nth-of-type(2){
+    width: 35%;
+    top: 39%;
+    left: 14%;
+}
+.s3 .img img:nth-of-type(3){
+    width: 35%;
+    top: 52%;
+    left: 43%;
+}
+.s3 .img img:nth-of-type(4){
+    position: absolute;
+    width: 15%;
+    top: 26%;
+    left: 29%;
+}
+.s3 .img img:nth-of-type(5){
+    position: absolute;
+    width: 15%;
+    top: 66%;
+    left: 30%;
+}
+.s3 .img img:nth-of-type(6){
+    position: absolute;
+    width: 15%;
+    top: 46%;
+    right: 13%;
+}
+.s3 .img p{
+    font-size:14px;
+}
+.s3 .img p:nth-of-type(1){
+    position: absolute;
+    top: 30%;
+    left: 31%;
+}
+.s3 .img p:nth-of-type(2){
+    position: absolute;
+    bottom: 27%;
+    left: 32%;
+}
+.s3 .img p:nth-of-type(3){
+    position: absolute;
+    top: 49%;
+    right: 16%;
+}
+/*第四屏内容*/
+.s4 .main .xiaohuo{
+    width: 60%;
+    top: -22%;
+    left: 20%;
+    animation: pulse 2s infinite;
+    position: absolute;
+}
+.s4 .main img:nth-of-type(2){
     width: 80%;
+    top: 12%;
+    left: 10%;
+}
+.s4 .main{
+    position: relative;
+    top: 15%;
+}
+.s4 h1{
+    color:#dc9f2a;
+    position: absolute;
+    top: 6%;
+    left: 32%;
+}
+.s4 .main input{
+    width: 70%;
+    height: 50px;
+    border:1px solid #dc9f2a;
+    padding-left:30px;
+    left: 15%;
+}
+.s4 .main input:nth-of-type(1){
+    position: absolute;
+    top: 20%;
+}
+.s4 .main input:nth-of-type(2){
+    position: absolute;
+    top: 35%;
+}
+.s4 .main input:nth-of-type(3){
+    position: absolute;
+    top: 50%;
+}
+.s4 .main input:nth-of-type(4){
+    position: absolute;
+    top: 65%;
+}
+.s4 .main button{
+     position: absolute;
+     top: 80%;
+     left: 15%;
+ }
+.s4 .main button{
+    width: 70%;
+    height: 50px;
+    background-color: #dc9f2a;
+    border:1px solid #dc9f2a;
+    color:#fff;
 }

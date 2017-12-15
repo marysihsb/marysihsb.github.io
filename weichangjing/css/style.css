@@ -1170,7 +1170,8 @@ body {
 .s7 .main input:nth-of-type(3){
     position: absolute;
     top: 40%;
-}.s7 .main button{
+}
+.s7 .main button{
      position: absolute;
      top: 55%;
      left: 15%;
