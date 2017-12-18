@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/Home.css">
+	<script>
+		var nowIng=3;
+		var maxIng=3;
+		function show(){
+			var nextIng=nowIng+1;
+			if(nextIng==maxIng+1){
+				nextIng=1;
+			}
+			document.getElementById("img"+nextIng).style.display="";
+			document.getElementById("img"+nowIng).style.display="none";
+			if(nowIng==maxIng){
+				nowIng=1;
+			}else{
+				nowIng++;
+			}
+			setTimeout("show()",3000);
+		}
+	</script>
+	<style>
+		#bianda img {
+			width: 279px;
+			height: 43px;
+			
+		}
+		#bianda img:hover {
+			width: 289px;
+			height: 53px;
+			padding: 0;
+		}
+	</style>
+</head>
+<body onload="show()">
+	<div class="warper">
+		<div class="header-inner">
+			<div class="header">
+				<div class="logo" id="bianda"><a href="Home.html"><img src="images/a3_03.gif" alt=""></a></div>
+				<ul class="nav">
+					<a href="Home.html"><li style="border-left:0px;" class="btn1">HOME</li></a>
+					<a href="EVENTS.html"><li class="btn2">EVENTS</li></a>
+					<a href="SERVICES.html"><li class="btn3">SERVICES</li></a>
+					<a href="JOBS.html"><li class="btn4">JOBY</li></a>
+					<a href="CONTACTS.html"><li style="border-right:0px;" class="btn5">CONTACTS</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="containt-inner">
+			<div class="containt clearfix">
+				<div class="banner">
+					<img src="images/slider-img1.jpg" id="img1" style="display:block">
+					<img src="images/slider-img2.jpg" id="img2" style="display:none">
+					<img src="images/slider-img3.jpg" id="img3" style="display:none">
+					<img style="margin-top:0px;" src="images/asd_02.gif" alt="">
+				</div>
+				<div class="main">
+					<div class="main-left">
+					<h1>Welcome!</h1>
+					<p>Internet Cafe is one of <font color=" #2ab5ba";>free website templates</font> created by TemplateMonster.com team.This web temmplate is optimized for 1280X1024 screen resolution. It is also XHTML & CSSvalid.</p>
+					<p style="padding-top:10px;">This <font color=" #2ab5ba";>internet Cafe Template</font> goes with two packages-with PSD source files and without them.PSD source files are available for the registered members of TemplateMonster.com.The basic packge (without PSD source) is available for anyon without registration.</p>
+					<h2>Here you cana find all services in one place:</h2>
+					<ul class="ul-left">
+						<li>Broadband Internet PSs with modern LCD flat-screens. Printers,Scanners,Webcam</li>
+						<li>CD-RW/DVD-burner,Multi-cars-reader,USB-Connectors</li>
+						<li>Lapatop/Notebook stations with LAN and/or wrieless access(10mbps speed)</li>
+						<li>Rentable Laptop/Notebook cabins.(Daily rent,locked and secured overnight)</li>
+						<li>Stabilized UPS with world-power outlets,220V & 110V.</li>
+					</ul>
+					<ul class="ul-right">
+						<li>Outdoor wrieless connection available 24/7(100m radius)</li>
+						<li style="height:114px;">Digitsl Photo Printer - connectyousSD-card,SmartMediaD-picture Card.CompactFlash,MemoryStick or mobile phone and print the picture direct at our photo-lab-station (Printpix).</li>
+						<li style="list-style:none; padding-top:0px; padding-bottom:44px;">Of course you can also"unload"your camers and burn CD...</li>
+						<a href=""><img src="images/f1_03.gif" alt="">All Services</a>
+					</ul>
+					</div>
+					<div class="main-right">
+						<div class="main-pic"><img src="images/h2_03.gif" alt=""></div>
+						<h1>Latest News</h1>
+						<h2>21February,2012</h2>
+						<p style="padding-bottom:14px;">Duis autem vel eum iriure dolor in hendererit tum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet,consetetuer in vulputate velit esse molestie consequat vel illum augue duis dolore.</p>
+						<a href=""><p style="color:#2ab5ba; padding-bottom:20px; text-decoration: underline;">Feuqiat nulia facilisis at vero eros et accumsan et iusto...</p></a>
+						<a href=""><img src="images/f1_03.gif" alt="">All News</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-inner">
+			<div class="footer clearfix">
+				<div class="footer-left"><img src="images/f3_03.gif" alt=""></div>
+				<div class="footer-center">
+				<ul>
+					<li>©22012 Interior <a <a style="color:#2ab5ba; text-decoration: underline;" href=""> href="">Website Template</a> by TemplateMonster.com</li>
+					<li>Phone:+1 800 559 6580 Email:<a style="color:#2ab5ba; text-decoration: underline;" href="">info@internetcafe.com</a></li>
+				</ul>
+				</div>
+				<div class="footer-right">
+				<ul>
+					<li><a href=""><img src="images/f5_03.gif" alt=""></a></li>
+					<li><a href=""><img src="images/f6_05.gif" alt=""></a></li>
+					<li><a href=""><img src="images/f7_07.gif" alt=""></a></li>
+					<li><a href=""><img src="images/F7_10.gif" alt=""></a></li>
+					<li><a href="xinlang/denglu.html"><img src="images/timg .jpg" alt=""></a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

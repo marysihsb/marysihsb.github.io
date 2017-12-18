@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.warp{
+    width:1262px;
+    margin:auto;
+}
+.warp header{
+    background: url("../images/bannere-bg.jpg");
+    height:492px;
+}
+.warp header .header-top{
+
+}
+.warp header .header-top p{
+    float: left;
+}
+.warp header .header-top p:nth-of-type(1){
+    width:35px;
+    margin-left: 616px;
+    margin-top: 10px;
+}
+.warp header .header-top p:nth-of-type(2){
+    width:100px;
+    margin:20px 0 0 268px;
+    color: #fff;
+    font-size: 14px;
+}
+@font-face {
+    font-family: Framework;
+    src: url(../font/Framework.ttf);
+}
+.Framework{
+    font-family: Framework;
+    font-size: 35px;
+    color: #fff;
+}
+.warp header .header-bottom .hb-left{
+    width:617px;
+}
+.warp header .header-bottom .hb-left div{
+    float: right;
+    margin-top: 86px;
+}
+.warp header .header-bottom .hb-left div p{
+    clear: both;
+    color: #fff;
+}
+.warp header .header-bottom .hb-left div p:nth-of-type(1){
+     font-family: MS Sans Serif;
+     font-size: 16px;
+     font-weight: 600;
+ }
+.warp header .header-bottom .hb-left div .wenzi{
+    font-family: Calibri;
+    font-size: 42px;
+}
+.warp header .header-bottom .hb-left div p:nth-of-type(5){
+    font-family: Calibri;
+    font-size: 15px;
+    width:202px;
+    height:43px;
+    background-color: #2996cc;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.warp .containt{
+    width:869px;
+    margin:auto;
+    height:312px;
+}
+.warp .containt ul{
+    margin-top: 65px;
+}
+.warp .containt ul li{
+    list-style: none;
+    width:195px;
+    float: left;
+    margin-right: 22px;
+    text-align: center;
+}
+.warp .containt ul li img{
+    margin-left:60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+}
+.warp .containt ul li a{
+    clear: both;
+    width:202px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.warp .containt ul li p{
+    color: #767f8f;
+    font-size: 12px;
+}
+.warp .xian{
+    width:1262px;
+    height:1px;
+    background-color: #e0e0e0;
+}
+
+footer{
+    width:1262px;
+    margin-top: 62px;
+    height:234px;
+}
+footer p:nth-of-type(1){
+    width:400px;
+    margin:auto;
+    font-size: 25px;
+}
+footer p:nth-of-type(2){
+    width:443px;
+    margin:auto;
+    font-size: 14px;
+    color: #959ca9;
+    margin-top: 10px;
+}
+footer div{
+    width:322px;
+    margin:auto;
+    margin-top: 34px;
+}
+footer div a{
+    float: left;
+    margin-right: 23px;
+}
+@media screen and (max-width:480px){
+    .warp{
+        width:100%;
+    }
+}

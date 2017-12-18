@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/CONTACTS.css">
+	<script>
+		function checkName(){
+			var a=document.getElementById("name").value;
+			if(a==""){
+				document.getElementById("nameSpan").innerHTML="名字不能为空";
+			}else if(a.length<2){
+				document.getElementById("nameSpan").innerHTML="长度小于二位";
+			}else if(a.length>16){
+				document.getElementById("nameSpan").innerHTML="名字过长";
+			}else{
+				document.getElementById("nameSpan").innerHTML="名字符合";
+			}
+		}
+		function checkEmail(){
+			var a=document.getElementById("email").value;
+			var b=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+			if(b.test(a)){
+				document.getElementById("emailSpan").innerHTML="符合";
+			}else{
+				document.getElementById("emailSpan").innerHTML="不符合";
+			}
+		}
+		function checkPhone(){
+			var a=document.getElementById("phone").value;
+			var b=/^1\d{10}$/;
+			if(b.test(a)){
+				document.getElementById("phoneSpan").innerHTML="符合";
+			}else{
+				document.getElementById("phoneSpan").innerHTML="不符合";
+			}
+		}
+	</script>
+	<style>
+		span{
+			font-size: 12px;
+			color: red;
+			margin-left: 5px;
+		}
+		#bianda img {
+			width: 279px;
+			height: 43px;
+			
+		}
+		#bianda img:hover {
+			width: 289px;
+			height: 53px;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="warper">
+		<div class="header-inner">
+			<div class="header clearfix">
+				<div class="logo" id="bianda"><a href="Home.html"><img src="images/a3_03.gif" alt=""></a></div>
+				<ul class="nav">
+					<a href="Home.html"><li style="border-left:0px;" class="btn1">HOME</li></a>
+					<a href="EVENTS.html"><li class="btn2">EVENTS</li></a>
+					<a href="SERVICES.html"><li class="btn3">SERVICES</li></a>
+					<a href="JOBS.html"><li class="btn4">JOBY</li></a>
+					<a href="CONTACTS.html"><li style="border-right:0px;" class="btn5">CONTACTS</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="containt-inner">
+			<div class="containt clearfix">
+				<div class="containt-left clearfix">
+					<h1>Contact Form</h1>
+					<ul>
+						<li style="width:79px;">Name:</li>
+						<li><input type="text" id="name" onkeyup="checkName()"><span id="nameSpan"></span></li>
+					</ul>
+					<ul>
+						<li style="width:79px;">Email:</li>
+						<li><input type="text" id="email" onkeyup="checkEmail()"><span id="emailSpan"></span></li>
+					</ul>
+					<ul>
+						<li style="width:79px;">Phone:</li>
+						<li><input type="text" id="phone" onkeyup="checkPhone()"><span id="phoneSpan"></span></li>
+					</ul>
+					<ul>
+						<li style="width:79px;">Message:</li>
+						<li><textarea name="" id="" cols="30" rows="10"></textarea></li>
+					</ul>
+					<ul>
+						<li><a href="" style="text-decoration: underline; color:#2ab5ba; padding-right:30px; padding-left:521px;">Clear</a></li>
+						<li><a href="" style="text-decoration: underline; color:#2ab5ba;">Send</a></li>
+					</ul>
+				</div>
+				<div class="containt-right">
+					<div style="padding-top:122px;"><img src="images/h2_03.gif" alt=""></div>
+					<h1>Latest News</h1>
+					<ul>
+						<li>24 Hour Emergency Towing</li>
+						<li>Monday - Frday: 7:30 am - 6:00 Saturday:7:30 am-Noon</li>
+						<li>Night Drop Available</li>
+					</ul>
+					<p>Demolink.org 8901 Marmora Road. Glasgow,D04 89GR.</p>
+					<ul class="ul-1" style="padding-right:10px;">
+						<li>Telephone:</li>
+						<li>FAX:</li>
+						<li>E-mail:</li>
+					</ul>
+					<ul class="ul-2">
+						<li>+1 959 552 5963</li>
+						<li>+1 959 552 5963</li>
+						<li><a href="" style="text-decoration: underline; color:#2ab5ba;">mail@demolink.org</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-inner">
+			<div class="footer clearfix">
+				<div class="footer-left"><img src="images/f3_03.gif" alt=""></div>
+				<div class="footer-center">
+				<ul>
+					<li>©22012 Interior <a <a style="color:#2ab5ba; text-decoration: underline;" href=""> href="">Website Template</a> by TemplateMonster.com</li>
+					<li>Phone:+1 800 559 6580 Email:<a style="color:#2ab5ba; text-decoration: underline;" href="">info@internetcafe.com</a></li>
+				</ul>
+				</div>
+				<div class="footer-right">
+				<ul>
+					<li><a href=""><img src="images/f5_03.gif" alt=""></a></li>
+					<li><a href=""><img src="images/f6_05.gif" alt=""></a></li>
+					<li><a href=""><img src="images/f7_07.gif" alt=""></a></li>
+					<li><a href=""><img src="images/F7_10.gif" alt=""></a></li>
+					<li><a href="xinlang/denglu.html"><img src="images/timg .jpg" alt=""></a></li>
+				</ul>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

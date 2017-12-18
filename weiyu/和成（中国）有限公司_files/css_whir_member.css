@@ -1,0 +1,277 @@
+﻿input::-webkit-input-placeholder {
+　color: #c4c4c1 !important; /* WebKit browsers */
+}
+input:-moz-placeholder {
+color: #c4c4c4 !important; /* Mozilla Firefox 4 to 18 */
+}
+input::-moz-placeholder {
+color: #c4c4c4 !important; /* Mozilla Firefox 19+ */
+}
+input:-ms-input-placeholder {
+color: #c4c4c4 !important; /* Internet Explorer 10+ */
+}
+
+.ContainMember{ position:relative;}
+.MemberBanner{ width:100%; text-align:center; height:550px;}
+.MainMemberOut{ width:100%; position:absolute; top:0;}
+.MainMemberIn{ max-width:1000px; width:100%; margin:0 auto; padding-top:120px;}
+.Loginbox{ width:320px; height:300px; background:#eaebee; float:right; padding:30px 15px; }
+.Lname,.Lpassword{ background:#fff url(../images/mico.png) no-repeat 6px 13px; border:1px solid #dcdcdc; height:42px; line-height:42px; padding:0 5px 0 40px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px; width:272px;margin-top:20px;}
+.Lpassword{ background-position:6px -53px; }
+.Loginbox h2{ margin:0; font-size:18px; font-weight:normal;}
+.LoginDL{ margin-top:20px;}
+.LoginDL .forgetPW,.LoginDL .Freereg{ color:#969696; font-size:12px;}
+.LoginDL .forgetPW{ float:left;}
+.LoginDL .Freereg{ float:right;}
+.Loginbox .btn{  margin-top:15px;background:#6e6e6e;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px; color:#fff; font-size:1.5em; text-align:center; height:42px; width:100%; text-align:center;}
+.Loginbox a.btn:hover{ color:#fff; background:#b6b6b6;}
+.Loginbox .Mico{ margin-top:20px;}
+.Mico .Msina,.Mico .MQQ{ background:url(../images/mico2.png) no-repeat 0 0px; padding-left:25px;color:#969696; display:inline-block; font-size:12px; height:20px;}
+.Loginbox .Mico .MQQ{ background-position:0 -42px; margin-left:25px;}
+.Loginbox a:hover{ color:#333;}
+
+.MemberCenter{ max-width:1000px; width:100%; margin:30px auto;}
+.MCenname{ margin:0 0 30px 0; font-weight:normal; font-size:20px;}
+.McenterBox{ border:1px solid #f0f0f0;}
+.MCformbox{ width:600px; margin:30px auto;}
+.MCformbox .Mctitle{ font-weight:normal; font-size:16px; margin:0 0 15px 0;}
+.MCformbox dl{ padding:10px 0;}
+.MCformbox dl dt{ float:left; width:70%;}
+.MCformbox dl dd{ float:right; text-align:left; width:30%; height:40px; line-height:40px; font-size:13px;}
+.MCformbox dl dd span{ padding-right:20px;}
+.MCformbox dl .text{ border:1px solid #f0f0f0; background:#fff; padding:0 5px; height:40px; line-height:40px; width:90%;}
+.MCformbox dl .codeinput{ width:45%; float:left; margin-right:5%;}
+.MCformbox dl .codebtn{ width:40%; border:1px solid #969696; text-align:center; background:#969696; color:#fff; display:inline-block; line-height:38px; height:38px; float:left; font-size:15px;}
+.MCformbox dl .btn{ background:#6e6e6e; height:42px; line-height:42px; text-align:center; width:50%; color:#fff; font-size:18px;cursor:pointer;}
+.MCformbox dl .btn:hover{ background:#b6b6b6; }
+
+.MeFavorites{ padding:20px; border:1px solid #f0f0f0; border-top:0; position:relative;}
+.MeFavorites h2{ font-weight:normal; font-size:18px; padding-left:14px; margin:0 15px 15px;}
+.MeFavorites .ico{ display:block; top:0; left:32px; background:url(../images/merkliste_icon.jpg) no-repeat  center; width:12px; height:66px; position:absolute;}
+.MeFavorites ul{ }
+
+.MeFavorites ul li{ float:left; width:210px; padding:0 14px; position:relative;}
+.MeFavorites ul li .pic{ width:210px; height:142px; display:block;}
+.MeFavorites ul li .pic img{width:210px; height:142px;}
+.MeFavorites ul li .title{overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis; display:block; text-align:left; font-size:15px;}
+.MeFavorites ul li .more{ display:block; width:26px; height:32px; background:#FFF url(../images/sprite_03.png) center no-repeat; background-size:75%; position:absolute; right:14px; top:0; display:none;}
+.MeFavorites ul li:hover .more{ display:block;}
+.Mcscroll{ width:280px; height:464px; position:relative; z-index:0; overflow:hidden;}
+.Mcscroll .BanList{ width:100%; overflow:hidden;}
+.Mcscroll .BanList ul{ z-index:0;}
+.Mcscroll .BanList li{ width:100%; overflow:hidden; float:left;}
+.Mcscroll .BanList li a{ display:block; width:100%;}
+.Mcscroll .BanList li a img{ width:280px; height:464px;}
+.Mcscroll .TabList{ width:100%; height:4px; overflow:hidden; left:0px; bottom:19px; position:absolute; z-index:0;}
+.Mcscroll .TabList .List{ width:280px; height:22px; margin:0 auto; text-align:center;}
+.Mcscroll .TabList .List ul{ height:22px; margin:0 auto;}
+.Mcscroll .TabList li{ float:left; width:28px; padding:0 4px;}
+.Mcscroll .TabList li span{ background:#fff; width:28px; height:2px; display:block; cursor:pointer;}
+.Mcscroll .TabList li.on span{ background:#555555;}
+
+.Meminformation{ width:670px;}
+.Meminformation dl dt{ width:70%;}
+.Meminformation dl dd{ position:relative; font-size:13px; color:#555;}
+.Meminformation dl dt .ftitle{ float:left; width:55px; text-align:right; display:block; line-height:40px; padding-right:10px; color:666; font-size:13px;}
+.Meminformation dl dt .text{ float:left; width:78%; background-image:url(../images/ico1.png); background-repeat:no-repeat; background-position:96% center;}
+.Meminformation  .modifybtn{ background:#6e6e6e url(../images/gd.png) no-repeat 90% center; display:block; height:24px; line-height:24px; color:#fff; position:absolute; left:0; bottom:0; padding:0 35px 0 25px; font-size:13px; }
+.Meminformation dl dt .btn{ margin-left:65px; width:80%;}
+.Meminformation  .modifybtn:hover{ background: url(../images/jtbh.png) #b6b6b6 no-repeat 90% center;}
+
+.ContainContact{ max-width:1000px; margin:0 auto; position:relative; overflow: hidden;}
+.Conbox{ border-bottom:1px solid #dedede; padding:30px 0;}
+.Conbox1{ padding-top:0;}
+.Conbox.last{ border:none;}
+.Conbox .contitle{ font-size:18px; font-weight:normal; margin:24px 0;font-weight: bold;}
+/*.Conbox1 .contitle{ margin-bottom:0;}*/
+.Conbox .C_ul1{padding-top: 12px;}
+.Conbox .C_ul1 li{ float:left; width:15%; margin-right:10%; line-height:54px; position:relative;}
+.Conbox .C_ul1 li img{ width:54px; height:54px; vertical-align:central; padding-right:10px;}
+.Conbox .C_ul1 li img.img2{ display:none;}
+.Conbox .C_ul1 li .weixinbox{ position:absolute; top: -20px;left: 64px; width:113px; height:113px; display:none;}
+.Conbox .C_ul1 li .weixinbox img{ width:90px; height:90px;}
+.Conbox .C_ul1 li a{ display:block; font-size:12px;}
+.Conbox .C_ul1 li a div{ width:54px; height:54px; float:left;padding-right: 10px;}
+
+.Conbox .C_ul1 li a:hover{ text-decoration:underline; }
+.Conbox .C_ul2{}
+.Conbox .C_ul2 li{float:left; width:313px; text-align:left; margin-left:30px;}
+.Conbox .C_ul2 li h3{ margin:0; font-weight:normal; font-size:14px;}
+.Conbox .C_ul2 li p{ margin:15px 0 0 0; line-height:24px; font-size:13px;}
+.Conbox .C_ul3{}
+.Conbox .C_ul3 li{float:left; width:405px; text-align:left; margin-left:30px; margin-bottom:20px; background:#f7f7f7; padding:20px 40px; position:relative;}
+.Conbox .C_ul3 li.ipadhid{padding: 0;width: 484px;}
+.Conbox .C_ul3 li.ipadhid img{width: 484px;height: 174px;}
+.Conbox .C_ul3 li.hover{ background:#f0f0f0;}
+.Conbox .C_ul3 li.ipadhid.hover{background:#f7f7f7;}
+.Conbox .C_ul3 li a{ position:absolute; display:block; width:80%; height:100%;}
+.Conbox .C_ul3 li h3{ margin:0; font-weight:normal; font-size:14px; line-height:47px;}
+.Conbox .C_ul3 li h3 img{ width:46px; height:47px; margin-right:15px;}
+.Conbox .C_ul3 li .con{margin:15px 0 0 0; color:#969696; font-size:13px;}
+.Conbox .C_ul3 li p{ line-height:24px; margin:0; padding-left:61px;}
+.Conbox .C_ul3 li p.tel{ background:url(../images/tel.png) no-repeat 18px center;}
+.Conbox .C_ul3 li p span{ color:#414446;}
+
+.Conbox .C_ul4{}
+.Conbox .C_ul4 li{float:left; width:313px; text-align:left; margin-left:30px;}
+.Conbox .C_ul4 li .con{margin:15px 0 0 0; color:#6e6e6e; font-size:12px;}
+.Conbox .C_ul4 li p{ line-height:24px;margin-bottom: 1em; position:relative;font-size: 13px;font-weight: bold;}
+.Conbox .C_ul4 li p.tel{ background:url(../images/tel.png) no-repeat left 5px; padding-left:94px;font-size: 12px;font-weight: normal;}
+.Conbox .C_ul4 li p.mail{ background:url(../images/ico3.png) no-repeat left 5px; padding-left:94px;font-size: 12px;font-weight: normal;}
+.Conbox .C_ul4 li p.weizhi{ background:url(../images/ico4.png) no-repeat left 5px; padding-left:94px;height: 48px;overflow: hidden;font-size: 12px;font-weight: normal;}
+.Conbox .C_ul4 li p.tel span,.Conbox .C_ul4 li p.mail span,.Conbox .C_ul4 li p.weizhi span{ position:absolute; top:0; left:35px;}
+
+
+
+.columnname{margin:30px 0 30px 0; font-weight:normal; font-size:20px;}
+
+.joblist{ margin-bottom:20px;}
+.joblist dl{ background:url(../images/joblistbg.png) no-repeat 96% 30px;}
+.joblist dl dt{ border-bottom:1px solid #dcdcdc; line-height:40px; height:40px; padding:10px 40px;}
+.joblist dl dt.first{ background:#dcdcdc; padding:0 40px; font-size:14px;}
+.joblist dl dt.first span{ color:#969696;}
+.joblist dl dt span{ float:left; width:25%; font-size:14px;}
+.joblist dl dd{ padding:0 40px 20px; display:none; position:relative;}
+.joblist dl.cur{ background:#f8f8f8 url(../images/joblistbg1.png) no-repeat 96% 30px;}
+.joblist dl dd .joinme{ padding-top:20px;}
+
+.jobSearch{ position:absolute; right: 2px;top: 24px; font-size:13px;}
+.jobSearch dl{ float:left; margin-left:25px;}
+.jobSearch dl dt{ float:left; padding-right:6px; line-height:34px;}
+.jobSearch dl dd{ float:left;}
+
+
+
+.storelist{ background:#f8f8f8; padding:0; font-size:13px;}
+.storebox{padding:15px;  border-bottom: 1px solid #f0f0f0;}
+.storeSearch{ width:400px; float:left; padding-top:15px; padding-left:35px;}
+.storeSearch dt{ font-size:16px;}
+
+
+.storeSearch .selectarea{ border:1px solid #d2d2d2;}
+.btn-select { 
+position: relative; 
+display: inline-block; 
+width: 250px; 
+height: 34px; 
+background-color: #f80; font-size:15px;
+} 
+.btn-select .cur-select { 
+position: absolute; 
+display: block; 
+width: 250px; 
+height: 34px; 
+line-height: 34px; 
+background: #fff url(../images/ico-arrow.png) no-repeat 94% center; 
+text-indent: 10px; 
+border:1px solid #d2d2d2; font-size:15px;
+} 
+.btn-select .cur-select em{ position:absolute; top:0; right:0; width:36px; height:34px; border-left:1px solid #d2d2d2;}
+/*.btn-select:hover .cur-select { 
+background-color: #f90; 
+} */
+.btn-select select { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 252px; 
+height: 36px; 
+opacity: 0; 
+filter: alpha(opacity: 0;); 
+color: #f80; 
+} 
+.btn-select select option { 
+text-indent: 10px; line-height:24px; height:24px;
+
+} 
+.btn-select select option:hover { 
+background-color: #f80; 
+color: #fff; 
+} 
+.storeSearch dl{ padding:5px 0;}
+.storeSearch .selectbtn{ background:#6e6e6e; height:34px; line-height:34px; text-align:center; width:150px; font-size:15px; color:#fff; cursor:pointer; margin-top:10px;}
+.storeimg{ float:right;}
+.storeimg a{ display:block;}
+.storeimg a.first{ margin-bottom:15px;}
+
+.storeimg a.first{ width:489px; height:122px; overflow:hidden;  display:block;}
+.storeimg a.first img{ width:489px; height:122px;display:block; -webkit-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-o-transform:all 1s ease-in-out;}
+.storeimg a.first img:hover{-webkit-transform:scale(1.0325);-moz-transform: scale(1.0325);-o-transform:scale(1.0325);}
+.storeimg a.sender{ width:489px; height:122px; overflow:hidden;  display:block;}
+.storeimg a.sender img{ width:489px; height:122px;display:block; -webkit-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-o-transform:all 1s ease-in-out;}
+.storeimg a.sender img:hover{-webkit-transform:scale(1.0325);-moz-transform: scale(1.0325);-o-transform:scale(1.0325);}
+
+
+
+.storelist ul{ padding:0px 50px 40px;}
+.storelist ul .cxtitle{ border-bottom:1px solid #aaaaaa; color:#373737; font-size:20px; font-weight:normal; padding:15px 0 15px;}
+.storelist li{ position:relative; border-bottom:1px solid #e5e5e5; padding-bottom:20px; margin-bottom:20px;}
+.storelist li h2{ color:#373737; font-size:16px; margin:0; font-weight:normal;}
+.storelist li .btn{ background:url(../images/cxico.png) no-repeat left center; font-size:13px; padding-left:20px; display:block; width:80px; height:30px; line-height:30px;}
+.storelist li .divRightShow{  right:0; bottom:0px;}
+
+
+.mapbox{ border:1px solid #aaaaaa; background:#fff; width:952px;}
+.mapL{ float:left; width:608px;}
+.mapcon{ float:right; width:300px; position:relative; padding:5% 15px 0;}
+.mapcon h3{ margin:0; font-weight:normal; border-top:1px solid #d2d2d2; font-size:14px; padding-top:20px;}
+.mapmain .closed{ display:block; background:url(../images/gb.jpg) no-repeat; width:40px; height:40px; position:absolute; top:6%; right:2%; z-index:999999; cursor:pointer;}
+.mapmain .closed:hover{ background:url(../images/gba.jpg) no-repeat;}
+.boxbg{background:rgba(0, 0, 0, 0.7) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+filter:Alpha(opacity=70); background:#000; position:fixed; height:100%; width:100%; display:none; z-index:999;}
+.mapmain{ position:absolute; top:0; left:0; z-index:99999;}
+
+.shbox{border-top:1px solid #c8c8c8; margin-top:40px; padding-top:40px;}
+.shleft{float:left; width:300px; padding-right:30px;padding-bottom:30px; border-right:1px solid #dfdfdf; margin-right:150px;}
+.shleft h2{font-weight:normal; font-size:16px; margin:0;}
+.shleft p{ padding-left:35px;}
+.shleft p.tel{background:url(../images/tel.png) no-repeat left center;}
+.shleft p.mail{background:url(../images/ico3.png) no-repeat left center; padding-left:35px;}
+.shcode{float:left; position:relative; width:518px;}
+.shcode span{display:block; text-align:left; padding-left:20px; margin-top:15px;}
+
+.fw_tz a{ display:inline-block; width:100px; height:28px; line-height:28px; color:#757575; border-bottom:1px #757575 solid; background:url(../images/icon.png) right center no-repeat; margin-left:50px;}
+.fw_tz a:hover{ text-decoration:none;}
+
+
+.shfu{ width:100%;}
+.shfu .hd{ width:958px; border:1px #f2f2f2 solid; padding:20px;}
+.shfu .hd h2{ font-size:16px; font-weight:normal; color:#666; display:inline-block; float:left;}
+.shfu .hd h2 span{ display:block; font-size:12px; line-height:28px;}
+.shfu .hd p{ width:113px; height:113px; float:right; text-align:center;}
+.shfu .hd p span{ display:block; line-height:22px; color:#ccc;}
+
+.shfu table{ width:100%; margin-top:-1px;}
+.shfu table th{ font-size:14px; color:#ccc; padding:10px 0; border:1px #f2f2f2 solid; margin:-1px 0 0 -1px; text-align:center; width:105px;}
+.shfu table th:last-child{ width:150px;}
+.shfu table td{font-size:14px; color:#999; border:1px #f2f2f2 solid; padding:10px 0; margin:-1px 0 0 -1px; text-align:center; width:105px;}
+.shfu table td:last-child{ width:150px;}
+
+.shfu form{border:1px #f2f2f2 solid; padding:50px; margin-top:50px;}
+.shfu form li{ margin:10px 0; width:50%; float:left; line-height:32px;}
+.shfu form li:last-child{ clear:both;}
+.shfu form li label{ width:15%; display:inline-block; line-height:32px; font-size:14px; color:#666;}
+.shfu form li .text{ width:60%; height:30px; border:1px #f2f2f2 solid;}
+.shfu form li textarea{ width:160%; height:100px;border:1px #f2f2f2 solid;margin: -30px 0 0 73px;}
+.shfu form li .btn{ width:270px; cursor:pointer; height:32px; background:#6e6e6e; text-align:center; line-height:32px; color:#FFF; font-size:14px; margin:20px 0 0 75px;}
+
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+.Conbox .C_ul3 li a{ width:80%;}
+.Conbox .C_ul3 li p.tel{ white-space:nowrap;}	
+.Conbox .C_ul3 li.ipadhid{display: none;}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

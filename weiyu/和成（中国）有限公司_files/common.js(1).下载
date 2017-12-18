@@ -1,0 +1,40 @@
+//右边分享1111
+$(".divRightShow .span_show").click(function(){
+    if($(this).next(".divShow").css("display")=="none"){
+	   $(this).next(".divShow").stop(true,true).slideDown("slow");
+	}else{
+	   $(this).next(".divShow").stop(true,true).slideUp("slow");
+}
+event.stopPropagation(); // 阻止事件冒泡
+});
+
+$(".divRightShow .span_show2").click(function(){
+    if($(this).next(".divShow").width()==0){
+	   $(this).next(".divShow").stop(true,true).animate({"width":"144px"});
+	}else{
+	   $(this).next(".divShow").stop(true,true).animate({"width":"0px"});
+}
+event.stopPropagation(); // 阻止事件冒泡
+});
+//右边分享END
+
+
+function JRSC(){
+		
+
+};
+
+
+$(document).ready(function(){
+    //普通banner单图隐藏
+    var banli2=$(".HomeBan .BanList li").size();
+    if(banli2<=1)
+    {
+    	$(".HomeBan .TabList").hide();
+        $(".HomeBan .prev, .HomeBan .next").hide();
+    }
+})
+
+
+
+

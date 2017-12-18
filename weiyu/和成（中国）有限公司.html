@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.hcg.com.cn/ -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ 
+ 
+<!--
+                       (0 0)
+   +=============oOO====(_)================+
+   |   Powered By wanhu - www.wanhu.com.cn |
+   |   Tel:400-888-0035  020-85575672      |
+   |   Creation:2014.12.08                 |
+   |   ezEip v4.0.6                        |
+   +==========================oOO==========+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="Author" content="万户网络">
+<meta content="万户网络 www.wanhu.com.cn" name="design">
+<meta property="wb:webmaster" content="97d1fa2d77f997f7">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Author" content="万户网络设计制作">
+<title>和成（中国）有限公司</title>
+<meta name="keywords" content="和成（中国）有限公司
+HCG
+和成卫浴">
+<meta name="Description" content="和成（中国）有限公司">
+
+<link rel="stylesheet" type="text/css" href="./和成（中国）有限公司_files/css_whir.css">
+<link rel="stylesheet" type="text/css" href="./和成（中国）有限公司_files/css_whir_member.css">
+<script charset="utf-8" src="./和成（中国）有限公司_files/v.js.下载"></script><script src="./和成（中国）有限公司_files/hm.js.下载"></script><script src="./和成（中国）有限公司_files/hm.js.下载"></script><script src="./和成（中国）有限公司_files/hm.js(1).下载"></script><script type="text/javascript" src="./和成（中国）有限公司_files/jquery-1.4.2.min.js.下载"></script>
+<script src="./和成（中国）有限公司_files/WdatePicker.js.下载" language="javascript" type="text/javascript"></script><link href="./和成（中国）有限公司_files/WdatePicker.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="/cn/scripts/html5shiv.v3.72.min.js"></script>
+<![endif]-->
+
+<link href="./和成（中国）有限公司_files/WdatePicker.css" rel="stylesheet" type="text/css"></head><body><link href="./和成（中国）有限公司_files/jiathis_share.css" rel="stylesheet" type="text/css"><iframe frameborder="0" style="position: absolute; display: none; opacity: 0;" src="./和成（中国）有限公司_files/saved_resource.html"></iframe><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;"></div><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; overflow: auto;"></div><iframe frameborder="0" src="./和成（中国）有限公司_files/jiathis_utility.html" style="display: none;"></iframe><div style="display: none;"><script src="./和成（中国）有限公司_files/z_stat.php" language="JavaScript">
+</script><script src="./和成（中国）有限公司_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1261915609" target="_blank" title="站长统计">站长统计</a>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cd887e5c415367bdd470166650094636";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+<!--判断a标签，如果是空或者#，就修改掉-->
+<script type="text/javascript">
+    $(function () {
+        $("a").each(function (index, element) {
+            var aElement = $(element);
+            var hrefStr = $.trim(aElement.attr("href"));
+            if (hrefStr == "#" | hrefStr == "" | hrefStr == undefined) {
+                $(element).attr("href", "javascript:void(0);"); //防止点击，URL出现#号
+                //aElement.css("cursor", "default"); //去掉手势图标
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function ChangeCsrq() {
+        var strBirthday = $("#15893").val();
+        $("#18261").val(jsGetAge(strBirthday));
+
+        //计算星座
+        var month = "";
+        var day = "";
+        var a = strBirthday.split("-");
+        if (a.length > 2) {
+            month = a[1];
+            day = a[2];
+        }
+        $("#18272").val(getAstro(month, day)+"座");
+        //alert($("#18272").val());
+    }
+
+    function getAstro(month, day) {
+        var s = "魔羯水瓶双鱼牡羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯";
+        var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
+        return s.substr(month * 2 - (day < arr[month - 1] ? 2 : 0), 2);
+    }
+
+    function jsGetAge(strBirthday) {
+        var returnAge;
+        var strBirthdayArr = strBirthday.split("-");
+        var birthYear = strBirthdayArr[0];
+        var birthMonth = strBirthdayArr[1];
+        var birthDay = strBirthdayArr[2];
+
+        d = new Date();
+        var nowYear = d.getFullYear();
+        var nowMonth = d.getMonth() + 1;
+        var nowDay = d.getDate();
+
+        if (nowYear == birthYear) {
+            returnAge = 0; //同年 则为0岁
+        }
+        else {
+            var ageDiff = nowYear - birthYear; //年之差
+            if (ageDiff > 0) {
+                if (nowMonth == birthMonth) {
+                    var dayDiff = nowDay - birthDay; //日之差
+                    if (dayDiff < 0) {
+                        returnAge = ageDiff - 1;
+                    }
+                    else {
+                        returnAge = ageDiff;
+                    }
+                }
+                else {
+                    var monthDiff = nowMonth - birthMonth; //月之差
+                    if (monthDiff < 0) {
+                        returnAge = ageDiff - 1;
+                    }
+                    else {
+                        returnAge = ageDiff;
+                    }
+                }
+            }
+            else {
+                returnAge = -1; //返回-1 表示出生日期输入错误 晚于今天
+            }
+        }
+
+        return returnAge; //返回周岁年龄
+
+    }
+</script>
+
+<script type="text/javascript" src="./和成（中国）有限公司_files/jquery.SuperSlide.2.1.1.js.下载"></script>
+<script type="text/javascript" src="./和成（中国）有限公司_files/jquery.bxslider.js.下载"></script>
+<script type="text/javascript">
+var sUserAgent = navigator.userAgent.toLowerCase();
+function isMobileDevice() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+	var ipad = sUserAgent.match(/(ipad).*os\s([\d_]+)/i) == "ipad";
+    if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		
+        return true;
+		
+    }
+	else if(ipad){
+		
+		  return false;
+		  
+		}else{
+			
+			 return false;
+			 
+			}
+   
+}
+if(isMobileDevice()){
+	location.href='/index_wap.aspx';
+}
+else{
+	  
+	}
+
+    var navID = "";
+</script>
+
+
+
+
+<!--top-->
+ 
+ 
+<header class="Toper TopFix" style="height: 48px; overflow: hidden;">
+	<div class="Top" style="padding-top: 6px;">
+        <div class="LogoBox" style="width: 60px; overflow: hidden;"><a href="http://www.hcg.com.cn/index.aspx"><img src="./和成（中国）有限公司_files/logo.png"></a></div>
+    	<div class="RightBox">
+        	<div class="SearchBox">
+                <input type="button" name="imageField" class="SearchBtn" onclick="return GoSearchUrl();" style="cursor:pointer">
+                <input type="text" name="keyword" class="searchtext" onkeydown="entersearch()" onblur="if(this.value==&#39;&#39;)value=&#39;Search&#39;;" onfocus="if(this.value==&#39;Search&#39;)value=&#39;&#39;;" value="Search" id="key">
+                <div class="clear"></div>
+            </div>
+            <div id="div_islogin" class="TopMember" style="display:none">
+            <a href="http://www.hcg.com.cn/Member/Member.aspx" style="cursor:pointer" id="loginthis" class="a_Btn BtnMember">  
+            <span id="span_user" style="display:block"></span></a>
+            <dl>
+              <dd><a href="http://www.hcg.com.cn/list_213.aspx">公告</a></dd>
+              <dd><a href="http://www.hcg.com.cn/hyhd/list_197.aspx">会员活动</a></dd>
+              <dd><a href="http://www.hcg.com.cn/Member/favorite.aspx">我的收藏</a></dd>
+              <dd><a href="http://www.hcg.com.cn/Member/Member.aspx">账户设置</a></dd>
+              <dd><a href="javascript:myloginout();">退出登录</a></dd>
+            </dl>
+            </div>
+            <div id="div_nologin" class="TopMember" style="display: block;">
+                <a style="cursor:pointer" id="loginthis" class="a_Btn BtnMember" href="javascript:void(0);"></a>
+                <div class="login_drop" style="display: none;">
+                    <a href="javascript:void(0);" class="BtnMember">会员登录</a>
+                </div>
+            </div>
+        	<a style="cursor:pointer" class="a_Btn BtnEN" onclick="tishi();" href="javascript:void(0);">EN</a>
+        	
+            
+            <a style="cursor:pointer" class="a_Btn BtnMerkliste" href="javascript:void(0);"><span class="badge" id="span_count"></span></a>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <div class="divMerkliste" id="sidebar" style="top: 48px;">
+        	<span class="span"><a href="javascript:void(0);" class="close"></a> 收藏夹</span>
+            <ul id="ul_scj" style="height: 675px;"></ul>
+        </div>
+        
+        <nav class="MainNav">
+            <ul>
+                <li id="nav1">
+                	<a href="http://www.hcg.com.cn/ppcs/index_14.aspx" class="navA">关于和成</a>
+                    <dl style="overflow: hidden; height: 174px; display: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 0px;">
+                    	<dd><a href="http://www.hcg.com.cn/ppcs/index_14.aspx">和成简介</a></dd>
+                    	<dd><a href="http://www.hcg.com.cn/hcwh/index_18.aspx">和成文化</a></dd>
+                    	<dd><a href="http://www.hcg.com.cn/hcgfzlc/index_20.aspx">品牌故事</a></dd>
+                    	<dd><a href="http://www.hcg.com.cn/ry/list_26.aspx">荣誉证书</a></dd>
+                    	<dd><a href="http://www.hcg.com.cn/spxs/list_28.aspx">视频欣赏</a></dd>
+                        
+                    	<dd><a href="http://www.hcg.com.cn/hczx/list_29.aspx?lcid=570">和成资讯</a></dd>
+                        
+                    </dl>
+                </li>
+                <li id="nav2">
+                	<a href="http://www.hcg.com.cn/wycp/index_31.aspx" class="navA">和成产品</a>
+                    <dl style="overflow: hidden; height: 116px; display: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 0px;">
+                        
+                    	<dd><a href="http://www.hcg.com.cn/wycp/index_31.aspx">卫浴产品</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/cgcp/index_32.aspx">橱柜产品</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/tcbb/index_33.aspx">陶瓷薄板</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/xzzx/index_34.aspx">下载中心</a></dd>
+                    	
+                    </dl>
+                </li>
+                <li id="nav3">
+                	<a href="http://www.hcg.com.cn/tcjs/list_36.aspx" class="navA">和成技术</a>
+                    <dl style="display: none; overflow: hidden; height: 87px; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 0px;">
+                        
+                    	<dd><a href="http://www.hcg.com.cn/tcjs/list_36.aspx">陶瓷技术</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/tqjs/list_37.aspx">铜器技术</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/znjs/list_38.aspx">智能技术</a></dd>
+                    	
+                    </dl>
+                </li>
+                <li id="nav4">
+                	<a href="http://www.hcg.com.cn/gcxm/list_39.aspx" class="navA">工程项目</a>
+                </li>
+                <li id="nav5">
+                	<a href="http://www.hcg.com.cn/mdcx/list_41.aspx" class="navA">联系和成</a>
+                    <dl style="display: none;">
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/mdcx/list_41.aspx">门店查询</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/swqt/index_42.aspx">商务洽谈</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/shfw/index_43.aspx">售后服务</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/rczm/list_44.aspx">人才招募</a></dd>
+                    	
+                    	<dd><a href="http://www.hcg.com.cn/gzhc/index_45.aspx">关注和成</a></dd>
+                    	
+                    </dl>
+                </li>
+                <li id="nav6"><a href="https://hcg.tmall.com/?spm=a1z10.3-b.1997427721.d4918089.STs8ek" target="_blank" class="navA">网上商城</a></li>
+                <div class="clear"></div>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+	
+</header>
+<style>
+.Top .RightBox .login_drop{display: none;position: absolute;top: 22px;text-align: center;
+    padding: 20px 0 0;
+    background: #fff;left:-10px;opacity: 0.7}
+.Top .RightBox .login_drop a{background: none;display: block;padding: 0;width: 52px;
+    display: inline-block;
+    color: #8a8c8d;
+    border-bottom: #dcdcdc 1px solid;
+    line-height: 28px;
+    color: #c2c2c2;
+    font-size: 12px;
+    padding: 0 12px;}
+    .Top .RightBox .login_drop a:hover{
+        text-decoration: none;
+    border-bottom: #000 1px solid;
+    color: #555555;
+    background: #eee;
+    }
+</style>
+<script>
+$("#div_nologin").hover(function(){
+    $(".login_drop").slideDown();
+},function(){
+    $(".login_drop").slideUp();
+})
+</script>
+<script type="text/javascript">
+    $(function () {
+        GetUserInfo_Top();
+        //异步判断是否登录
+        $.ajax({
+            url: "/label/member/islogin.aspx",
+            cache: false,
+            success: function (data) {
+                var result = eval("[" + data + "]")[0]; //值: [{'islogin':'1','username':'张三'}]
+                if (result.islogin == "1") { // 已经登录
+                    $("#div_islogin").css("display", "block");
+                    $("#div_nologin").css("display", "none");
+                }
+                else {
+                    $("#div_nologin").css("display", "block");
+                    $("#div_islogin").css("display", "none");
+                }
+            }
+        })
+    })
+
+    function GetUserInfo_Top() {
+        $.ajax({
+            url: "/label/member/getinfo.aspx", //没有用到 wtl:resource 置标时用此路径
+            type: "POST",
+            cache: false,
+            async: false,
+            data: "",
+            success: function (data) {
+                var objs = eval(data);
+                for (var i = 0; i < objs.length; i++) {//设值进控件
+                    if (objs[i].Key == "11242") {
+                        $("#span_user").html("" + wy_substr(objs[i].Value, 6) + "");
+                    }
+                }
+            },
+            error: function () {
+                //alert("登录失败");
+            }
+        });
+    }
+
+    function wy_substr(str, len) {
+        if (!str || !len) { return ''; }
+        var build = "";
+        for (var i = 0; i < str.length && len > 0; i++) {
+            build += str.substr(i, 1);
+            len -= str.charCodeAt(i) > 127 ? 2 : 1;
+        }
+        if (build.length < str.length)
+            build += "...";
+        return build;
+
+    }
+
+    //会员异步退出
+    function myloginout() {
+        $.ajax({
+            url: "/label/member/loginout.aspx?t=" + new Date().getMilliseconds(),
+            success: function (data) {
+                location.href ='/index.aspx'; //跳转到首页
+            }
+        });
+    }
+   //导航选中
+    $("#nav" + navID).addClass("onnav");
+	
+	
+	var winH = $(window).height();
+	$("#sidebar").find("ul").css("height",winH-70);
+	
+	//收藏夹
+	$(".divMerkliste .close").click(function(){
+
+		$(this).parents(".divMerkliste").stop(true,false).animate({right:"-330px",opacity:0},"slow");
+	
+		});
+
+	$(".BtnMerkliste").click(function(){
+			if($(".divMerkliste").css("right")=="0px"){
+
+				$(".divMerkliste").stop(true,false).animate({right:"-330px",opacity:0},"slow");
+				
+				}else{
+				$(".divMerkliste").stop(true,false).animate({right:"0px",opacity:1},"slow");
+					}
+		});
+//	var start = new Date();
+//	function diffTime(diff){
+//		var end = new Date();
+//		var diffTime = (end.getTime() - start.getTime());
+//		if(diffTime <= diff ){
+//		   return false;
+//		}
+//		else{
+//			start = end;
+//			return true;
+//		}
+//		
+//	}
+    
+	
+	var winWidth = $(window).width();
+	if(winWidth > 1024){
+	$(".MainNav ul li").hover(function(){
+		$(this).find("dl").stop(true,false).slideDown(500);
+		},function(){
+		$(this).find("dl").stop(true,false).slideUp(100);
+			});	
+	}
+	else{
+		  $(".MainNav ul li").each(function(i) {
+            if($(this).find("dl").size()>0){
+				  $(this).find(".navA").attr("href","javascript:;");
+				}
+			$(this).click(function(){
+			     if($(this).hasClass("onList")){
+					    $(this).removeClass("onList");
+					 }
+			     else{
+					    $(this).addClass("onList").siblings().removeClass("onList");
+					 }
+			  })
+        });
+		}			
+	
+	
+	//搜索
+		function GoSearchUrl() {
+		    var searchinput = document.getElementById("key");
+		    if (searchinput.value == "" || searchinput.value == "Search") {
+		        MyAlert("请输入关键字！");
+		        searchinput.focus();
+		        return false;
+		    }
+		    if (searchinput.value.length > 50) {
+		        MyAlert("输入的关键字字数不要过多！");
+		        searchinput.focus();
+		        return false;
+		    }
+		    CheckString(searchinput.value);
+		}
+
+		function GoSreach(rs) {
+		    window.location = "/search.aspx?key=" + escape(rs);
+		    return true;
+		}
+
+		function entersearch() {
+		    //alert(dd);
+		    var event = window.event || arguments.callee.caller.arguments[0];
+		    if (event.keyCode == 13) {
+		        GoSearchUrl();
+		    }
+		}
+
+		function CheckString(s) {
+		    var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）—|{}【】‘；：”“'。，、？]");
+		    var rs = "";
+		    for (var i = 0; i < s.length; i++) {
+		        rs = rs + s.substr(i, 1).replace(pattern, '');
+		    }
+		    if (rs == "") {
+		        MyAlert("不能输入特殊字符！");
+		        return false;
+		    }
+		    else {
+		        GoSreach(rs);
+		    }
+		}
+</script>
+
+
+<script type="text/javascript">
+    //添加到收藏夹
+    function AddScj(title, image, url) {
+        data = { title: title, image: image, url: url };
+        $.ajax({
+            url: "/Ajax/AddScj.aspx",
+            type: "POST",
+            cache: false,
+            async: false,
+            data: data,
+            success: function (state) {
+                if (state == "1") {
+                    $("#span_merkliste_box").show().animate({
+				                "right":30,
+				                "top":-100,
+				                "height":"0",
+				                "width":"0",
+				
+			                },1500,function(){
+					                $("#span_merkliste_box").css({
+							                "right":"50%",
+							                "marginRight":"-250px",
+							                "top":"100px",
+							                "height":"500px",
+							                "width":"500px",
+							
+						                }).hide();
+				                });
+                    GetScj();
+                }
+                else if (state == "3") {
+                    MyAlert("不能重复收藏！");
+                    return;
+                }
+                else {
+                    MyAlert("收藏失败");
+                }
+
+            },
+            error: function (result) {
+
+            }
+        });
+    }
+
+
+    function DeleteScj(id) {
+        data = { id: id };
+        $.ajax({
+            url: "/Ajax/DeleteScj.aspx",
+            type: "POST",
+            cache: false,
+            async: false,
+            data: data,
+            success: function (state) {
+                if (state == "1") {
+                    GetScj();
+                }
+                else {
+                    MyAlert("删除失败");
+                    GetScj();
+                }
+
+            },
+            error: function (result) {
+
+            }
+        });
+    }
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        GetScj();
+    })
+
+    function GetScj() {
+        $("#ul_scj").empty(); //清空
+        $.ajax({
+            url: "/Ajax/GetScj.aspx",
+            type: "POST",
+            cache: false,
+            async: false,
+            data: "",
+            success: function (state) {
+                if (state != "") {
+                    var stateJSON = eval("(" + state + ")");
+                    var str = "";
+                    for (i = 0; i < stateJSON.length; i++) {
+                        if (i == 0) {
+                            $("#span_count").html(unescape(stateJSON[i].Counts));
+                        }
+                        if (unescape(stateJSON[i].ImageUrl) == "") {
+                            str += "<li><a href=\"" + unescape(stateJSON[i].LinkUrl) + "\" target=\"_blank\"><img style=\"width:135px; height:84px\" src=\"/cn/uploadfiles/nopic.jpg\" /><span>" + unescape(stateJSON[i].Title) + "</span></a><i class=\"li_remove\" onclick=\"DeleteScj('" + unescape(stateJSON[i].Whir_U_Content_PID) + "')\" style=\"cursor:pointer\"></i></li>";
+                        }
+                        else {
+                            str += "<li><a href=\"" + unescape(stateJSON[i].LinkUrl) + "\" target=\"_blank\"><img style=\"width:135px; height:84px\" src=\"/uploadfiles/" + unescape(stateJSON[i].ImageUrl) + "\" /><span>" + unescape(stateJSON[i].Title) + "</span></a><i class=\"li_remove\" onclick=\"DeleteScj('" + unescape(stateJSON[i].Whir_U_Content_PID) + "')\" style=\"cursor:pointer\"></i></li>";
+                        }
+                    }
+                    str += "<div class=\"clear\"></div>";
+
+                    $("#ul_scj").html(str);
+                }
+                else {
+                    $("#span_count").html("");
+                }
+            },
+            error: function (result) {
+                //alert(result);
+            }
+        });
+    }
+
+
+    function tishi() {
+        MyAlert("英文站未开通!");
+        return;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+<!--top End-->
+
+
+<!--Banner Star-->
+<div class="HomeBanner" style="padding-top: 0px;">
+        <div class="bx-wrapper" style="max-width: 1920px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 675px;"><ul style="width: auto; position: relative;">
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 0; display: none;"><a href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-16581039270.2.LHFlXB&amp;id=550587951852&amp;scene=taobao_shop&amp;sku_properties=1627207:28341" style="background-image: url(&quot;/uploadfiles/2017/06/201706091111321132.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/2017/06/201706091111321132.jpg" src="./和成（中国）有限公司_files/201706091111321132.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 0; display: none;"><a href="http://www.hcg.com.cn/list_213.aspx" style="background-image: url(&quot;/uploadfiles/首页banner/20170224100428428.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/首页banner/20170224100428428.jpg" src="./和成（中国）有限公司_files/20170224100428428.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 0; display: none;"><a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=50&amp;lcid=8" style="background-image: url(&quot;/uploadfiles/首页banner/201609051411191119.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/首页banner/201609051411191119.jpg" src="./和成（中国）有限公司_files/201609051411191119.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 0; display: none;"><a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=4112&amp;lcid=13" style="background-image: url(&quot;/uploadfiles/2017/03/201703011431573157.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/2017/03/201703011431573157.jpg" src="./和成（中国）有限公司_files/201703011431573157.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 0; display: none;"><a href="https://detail.tmall.com/item.htm?spm=a1z10.5-b-s.w4011-14450636086.67.jy5ZCg&amp;id=533645462108&amp;rn=e8d9be9c36437f578729e8059d949374&amp;abbucket=14" style="background-image: url(&quot;/uploadfiles/首页banner/201609051411231123.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/首页banner/201609051411231123.jpg" src="./和成（中国）有限公司_files/201609051411231123.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+               <li style="float: none; list-style: none; position: absolute; width: 1583px; z-index: 50; display: list-item;"><a href="http://www.hcg.com.cn/swqt/index_42.aspx" style="background-image: url(&quot;/uploadfiles/首页banner/20170116145003503.jpg&quot;); height: 675px;" target="_blank"><img data-original="/uploadfiles/首页banner/20170116145003503.jpg" src="./和成（中国）有限公司_files/20170116145003503.jpg" margin-top="-252.41484375000005px" style="display: inline; width: 100%; margin-top: -252.415px;"><span></span></a></li>
+            
+        </ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="http://www.hcg.com.cn/" data-slide-index="5" class="bx-pager-link active">6</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="http://www.hcg.com.cn/">Prev</a><a class="bx-next" href="http://www.hcg.com.cn/">Next</a></div></div></div>
+</div>
+
+<script type="text/javascript">
+    //满屏Banner
+	var screeW =window.screen.width;
+	//alert(screeW)
+	var screeH =window.screen.height;
+$(document).ready(function(){
+    var winH = $(window).height();
+    var winW = $(window).width();
+	
+	if(winW<=768){
+		  $(".HomeBanner li a").css("height",screeW*1431/1920);
+		  
+		  $('.HomeBanner ul').bxSlider({
+    mode: 'fade',
+    slideMargin: 0,
+    auto: true,
+    onSlideAfter: function(item,oldIndex,newIndex) {
+    $(window).trigger('scroll');//图片延迟加载
+    }
+    });
+		}
+		else{
+			 $(".HomeBanner li a").css("height",winH-70);
+	
+    		$(".HomeBanner li").each(function(){
+        $(this).find("img").attr("margin-top",-(winW*1431/1920-(winH-70))/2+"px");
+        //在jquery.lazyload.js 78行会调用
+        $(this).find("img").show();//先让图片隐藏再显示，防止出现多个加载图。
+    })
+
+    $('.HomeBanner ul').bxSlider({
+    mode: 'fade',
+    slideWidth: 1920,
+    slideMargin: 0,
+    auto: true,
+    onSlideAfter: function(item,oldIndex,newIndex) {
+    $(window).trigger('scroll');//图片延迟加载
+    }
+    });
+
+    
+    
+	}
+   
+});
+//旋转事件
+ 
+  window.onorientationchange=function(){
+	     switch(window.orientation) {
+			    case 0:
+				window.location.reload();
+				break;
+				case -90:
+				window.location.reload();
+				break;
+				case 90:
+				window.location.reload();
+				break;
+				case 180:
+				window.location.reload();
+				break;
+			 }
+	  } 
+//单图隐藏
+var banli=$(".HomeBanner li").size();
+    if(banli<=1)
+    {
+        $(".bx-controls").hide();
+    }
+ //滚动
+ $(window).scroll(function(){
+ winW = $(window).width();  
+ $(".HomeBanner").css("padding-top","0px");
+ $(".HomeBanner li").each(function(){
+ //console.log(self.loaded);
+ if(self.loaded==true)//图片加载完成
+ {
+    $(this).find("img").css("margin-top",-(winW*1431/1920-(winH-70))/2+"px");
+ }
+ }) 
+ })
+ 
+</script>
+
+<section class="Contain">
+	<section class="HomeNewsProduct">
+    	<div class="Main">
+        	<div class="HomeTitle">新品上市</div>
+        	<ul>
+                
+            	<li>
+                	<a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=" class="img"><img src="./和成（中国）有限公司_files/20160905141303133.jpg"></a>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=" class="title">C660NAW+CF660NAW</a>
+                    <div class="p">奥柔莎系列 C660NAW+CF660NAW<br>
+规格 740 x 470 x 675 mm</div>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=" class="HomeMore allmore">了解更多</a>
+                </li>
+            	
+            	<li>
+                	<a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=4112&amp;lcid=13" class="img"><img src="./和成（中国）有限公司_files/20170301150535535.jpg"></a>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=4112&amp;lcid=13" class="title">AFC2103TAW</a>
+                    <div class="p">超级马桶系列 AFC2103TAW<br>
+规格 730 x 390 x 575 mm</div>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=4112&amp;lcid=13" class="HomeMore allmore">了解更多</a>
+                </li>
+            	
+            	<li style="margin-right: 0px;">
+                	<a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=2059&amp;lcid=13&amp;cid=" class="img"><img src="./和成（中国）有限公司_files/20160905141305135.jpg"></a>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=2059&amp;lcid=13&amp;cid=" class="title">C3032AWZ+CF3032AW</a>
+                    <div class="p">希尔顿系列 C3032AWZ+CF3032AW<br>
+规格 725 x 455 x 615 mm</div>
+                    <a href="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=2059&amp;lcid=13&amp;cid=" class="HomeMore allmore">了解更多</a>
+                </li>
+            	
+                <div class="clear"></div>
+            </ul>
+            <!--分享-->
+            <div class="divRightShow divRightShow1 HomdivRightShow"> 
+                <span class="span_show"></span>
+                <div class="divShow ">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste" onclick="AddScj(&#39;新品上市&#39;,&#39;&#39;,&#39;/wycp/index_31.aspx&#39;)"></span>
+            </div>
+            <!--分享-->
+            <!--分享_1024-->
+            <div class="divRightShow divRightShow_1024 clearfix"> 
+                <span class="span_show2"></span>
+                <div class="divShow ">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste" onclick="AddScj(&#39;新品上市&#39;,&#39;&#39;,&#39;/wycp/index_31.aspx&#39;)"></span>
+            </div>
+            <!--分享_1024-->
+        </div>
+    </section>
+    
+    <section class="HomeColumn beiJingSection" onclick="beiJingSection()" style="background-image: url(&quot;/uploadfiles/首页banner/201609051411181118.jpg&quot;);">
+        
+        <script type="text/javascript">
+            $(".HomeColumn").css("background-image", "url(/uploadfiles/首页banner/201609051411181118.jpg)");
+
+            //背景图链接地址
+            function beiJingSection() {
+                // location.href ='';
+                event.stopPropagation(); // 阻止事件冒泡
+            }
+
+            //产品详细链接
+            function tuijianChanPinA(lianJie) {
+                location.href = $.trim(lianJie);
+                event.stopPropagation(); // 阻止事件冒泡
+            }
+
+            // 收藏按钮
+            function ShouCangSpan() {
+                var biaoti = $.trim($(this).attr("biaoti"));
+                var tulianjie = $.trim($(this).attr("tulianjie"));
+                var dizhi = $.trim($(this).attr("dizhi"));
+                AddScj(biaoti, tulianjie, dizhi);
+                event.stopPropagation(); // 阻止事件冒泡
+            }
+
+            //点击分享的时候，不让冒泡
+            function fenxiangzhuzhidiao() {
+                event.stopPropagation(); // 阻止事件冒泡
+            }
+
+        </script>
+        
+    	<div class="Main">
+        	<div class="divCont">
+                
+            	<div class="div" onclick="fenxiangzhuzhidiao()">
+                	<a href="javascript:void(0);" class="img" onclick="tuijianChanPinA(&#39;http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=&#39;)"><img src="./和成（中国）有限公司_files/首页中间产品推荐.jpg"></a>
+                    <div class="divTit">
+                    	<a href="javascript:void(0);" onclick="tuijianChanPinA(&#39;http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=&#39;)">C660NAW+CF660NAW</a>
+                    	<div class="p">奥柔莎系列 C660NAW+CF660NAW<br>
+规格 740 x 470 x 675 mm</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!--分享-->
+            
+            <div class="divRightShow HomdivRightShow " id="divRightShow_1024_2" onclick="fenxiangzhuzhidiao()">
+                <span class="span_show"></span>
+                <div class="divShow">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste ShouCangSpan" biaoti="C660NAW+CF660NAW" tulianjie="producttuijian/首页中间产品推荐.jpg" dizhi="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=" onclick="ShouCangSpan()"></span>
+            </div>
+            
+			
+            <!--分享-->   
+            
+			 <div class="divRightShow divRightShow_1024 clearfix" id="divRightShow_1024" onclick="fenxiangzhuzhidiao()"> 
+                <span class="span_show2"></span>
+                <div class="divShow ">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste ShouCangSpan" biaoti="C660NAW+CF660NAW" tulianjie="producttuijian/首页中间产品推荐.jpg" dizhi="http://www.hcg.com.cn/wycp/info_31.aspx?itemid=1990&amp;lcid=13&amp;cid=" onclick="ShouCangSpan()"></span>
+            </div>
+            
+            <!--分享_1024-->
+			                   
+        </div>
+    </section>
+    <script type="text/javascript">
+		var winWidth = $(window).width();
+		if(winWidth == 1024){
+				$("#divRightShow_1024_2").addClass("divRightShow_1024_2");
+			}
+	</script>
+    <section class="HomeCase">
+
+    	<div class="Main">
+        	<div class="HomeTitle">经典案例</div>
+            <ul>
+                
+            	<li>
+                	<a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2228&amp;lcid=53,265" class="img"><img src="./和成（中国）有限公司_files/201609221426392639.jpg"></a>
+                	<div class="divleft">
+                    	<a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2228&amp;lcid=53,265" class="tit">大连海中国</a>
+                        <span class="span">项目所使用HCG系列产品</span>
+                        <div class="p">
+                        	<div class="p_cont">秉承华润置地高品质的开发理念，基于一期、二期成熟的开发经验，海中国三期正孕育上市，海中国三期位于130万平米住区版图腹心，东侧是二期地块，南侧是中小学用地，北侧...</div>
+                        </div>
+                        <a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2228&amp;lcid=53,265" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	
+            	<li class="li2" style="margin-bottom: 0px;">
+                	<a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2244&amp;lcid=52,268" class="img"><img src="./和成（中国）有限公司_files/20160922134609469.jpg"></a>
+                	<div class="divleft">
+                    	<a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2244&amp;lcid=52,268" class="tit">SPIRIT HOTEL</a>
+                        <span class="span">项目所使用LAZULI系列产品</span>
+                        <div class="p">
+                        	<div class="p_cont">Spirit Hotel Thermal Spa酒店毗邻Sárvár镇的7个湖泊，位置宁静，提供22座游泳池，以及1个大型理疗、美容和医疗Spa中心，距离Nádasdy Castle城堡和历史悠久的Sárvár镇...</div>
+                        </div>
+                        <a href="http://www.hcg.com.cn/gcxm/info_39.aspx?itemid=2244&amp;lcid=52,268" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	
+            </ul>
+            
+            <!--分享-->
+            <div class="divRightShow divRightShow1 HomdivRightShow">
+                <span class="span_show"></span>
+                <div class="divShow">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste" onclick="AddScj(&#39;经典案例&#39;,&#39;&#39;,&#39;/gcxm/list_39.aspx&#39;)"></span>
+            </div>
+            <!--分享-->
+
+            <!--分享_1024-->
+            <div class="divRightShow divRightShow_1024 clearfix"> 
+                <span class="span_show2"></span>
+                <div class="divShow ">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                <span class="span_merkliste" onclick="AddScj(&#39;经典案例&#39;,&#39;&#39;,&#39;/gcxm/list_39.aspx&#39;)"></span>
+            </div>
+            <!--分享_1024--> 
+                     
+        </div>
+    </section>
+    
+    
+    <section class="HomeNews">
+    	<div class="Main">
+        	<div class="HomeTitle">最新资讯</div>
+            <ul>
+                 
+            	<li>
+                	<a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5245&amp;lcid=570" class="img"><img src="./和成（中国）有限公司_files/2017060911070777.jpg"></a>
+                	<div class="divleft">
+                        <div class="p">		06·03&nbsp;|&nbsp;HCG南昌华南城店盛大开业！			▲和成卫浴南昌华南城店	HCG和成卫浴1931年创立于台湾莺歌，历经80多载岁月历练，以创新、品质与服务，构建了强大的...</div>
+                        <a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5245&amp;lcid=570" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	 
+            	<li style="float: right;">
+                	<a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5236&amp;lcid=570" class="img"><img src="./和成（中国）有限公司_files/201706071152445244.jpg"></a>
+                	<div class="divleft">
+                        <div class="p">作为亚洲最具规模的卫浴展日前已完美落下帷幕，位居全球的各大卫浴品牌均齐聚上海新国际博览中心，异彩纷呈，与KBC一起，造就行业的新版图，共同展示卫浴行业新高度。作...</div>
+                        <a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5236&amp;lcid=570" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	 
+            	<li>
+                	<a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5142&amp;lcid=570" class="img"><img src="./和成（中国）有限公司_files/20170508150450450.jpg"></a>
+                	<div class="divleft">
+                        <div class="p">	经过细致的设计及严苛的质量论证	C2063/2064AW	C1983/1984AW	两款节水型单体马桶	将揭开其神秘面纱 	产品特点	 	C2063/2064AW、C1983/1984AW两款单体马桶拥有超强...</div>
+                        <a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5142&amp;lcid=570" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	 
+            	<li style="float: right;">
+                	<a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5099&amp;lcid=570" class="img"><img src="./和成（中国）有限公司_files/201704201556205620.jpg"></a>
+                	<div class="divleft">
+                        <div class="p">	尊敬的用户：	您好！为提升服务品牌和服务质量，即日起HCG和成卫浴售后热线全面升级为全国统一售后热线：400-920-0330，原售后热线&nbsp;800-820-0330&nbsp;将继续使...</div>
+                        <a href="http://www.hcg.com.cn/hczx/info_29.aspx?itemid=5099&amp;lcid=570" class="HomeMore allmore">了解更多</a>
+                    </div>
+                </li>
+            	
+                <div class="clear"></div>
+            </ul>
+            
+            <!--分享-->
+            <div class="divRightShow divRightShow2 HomdivRightShow">
+                <span class="span_show"></span>
+                <div class="divShow">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                
+                <span class="span_merkliste" onclick="AddScj(&#39;最新资讯&#39;,&#39;&#39;,&#39;/hczx/list_29.aspx?lcid=570&#39;)"></span>
+                
+            </div>
+            <!--分享-->
+
+            <!--分享_1024-->
+            <div class="divRightShow divRightShow_1024 clearfix"> 
+                <span class="span_show2"></span>
+                <div class="divShow ">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_24x24">
+                    <a class="jiathis_button_weixin" title="分享到微信" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                <a class="jiathis_button_tsina" title="分享到微博" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                <a class="jiathis_button_email" title="分享到邮件" href="javascript:void(0);" onclick="javascript:$(&quot;#mailtoA&quot;)[0].click()"><span class="jiathis_txt jtico jtico_email"></span></a>
+                <a class="jiathis_button_fb" title="分享到Facebook" href="javascript:void(0);"><span class="jiathis_txt jtico jtico_fb"></span></a>
+                </div>
+                <!-- JiaThis Button END -->
+                </div>
+                
+                <span class="span_merkliste" onclick="AddScj(&#39;最新资讯&#39;,&#39;&#39;,&#39;/hczx/list_29.aspx?lcid=570&#39;)"></span>
+                
+            </div>
+            <!--分享_1024-->
+
+        </div>
+    </section>
+    
+    
+</section>
+<script type="text/javascript">
+	$(".HomeNewsProduct ul li:last").css("margin-right","0px");
+	$(".HomeCase ul li:last").css("margin-bottom","0");	
+	$(".HomeCase ul li").each(function(i){
+		if((i+1)%2==0){
+			$(this).addClass("li2");
+			}
+		});
+		
+	$(".HomeNews ul li").each(function(i){
+		if((i+1)%2==0){
+			$(this).css("float","right")
+			}
+		});
+</script>
+
+<script>
+var winWidth = $(window).width();
+		if(winWidth > 1024){
+	window.onscroll=function(){
+			
+		var t = document.documentElement.scrollTop || document.body.scrollTop;
+		if($(window).scrollTop()==0){
+			$(".Toper").stop(true,false).animate({height:"70px"},"slow");
+			$(".LogoBox").stop(true,false).animate({width:"77px"},"slow");
+			$(".Top").stop(true,false).animate({"padding-top":"15px"},"slow");
+			$(".divMerkliste").stop(true,false).animate({top:"70px"},"slow");
+			$(".Toper").removeClass("TopFix");
+			
+		}
+		else{
+			$(".Toper").stop(true,false).animate({height:"48px"},"slow");
+			$(".LogoBox").stop(true,false).animate({width:"60px"},"slow");
+			$(".Top").stop(true,false).animate({"padding-top":"6px"},"slow");
+			$(".divMerkliste").stop(true,false).animate({top:"48px"},"slow");
+			$(".Toper").addClass("TopFix");
+			
+		}
+	
+	}
+		}
+</script>
+
+<!--bottom-->
+
+<link href="./和成（中国）有限公司_files/global.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./和成（中国）有限公司_files/common.js.下载"></script>
+<script type="text/javascript" src="./和成（中国）有限公司_files/jquery.form.js.下载"></script>
+<script type="text/javascript" src="./和成（中国）有限公司_files/Jquery.Query.js.下载"></script>
+<script type="text/javascript" websiteurl="/" src="./和成（中国）有限公司_files/submitform_validator.js.下载"></script>
+<script type="text/javascript" src="./和成（中国）有限公司_files/WdatePicker.js.下载"></script>
+
+<footer class="Bottom">
+	<div class="Main">
+    	<div class="B_title">HCG International </div>
+    	
+       <nav class="BottomLinks"> <!--友情链接-->
+       
+        <a href="http://www.hcg.com.tw/" target="_blank"><img src="./和成（中国）有限公司_files/icon1.png"></a><em>|</em>
+        <a href="http://hcg.com.ph/" target="_blank"><img src="./和成（中国）有限公司_files/icon2.png"></a><em>|</em>
+        <a href="http://www.hcg.com.cn/lazulizlgj/list_24.aspx" target="_blank"><img src="./和成（中国）有限公司_files/icon3.png"></a><em>|</em>
+        <a href="http://www.berloni.it/it/" target="_blank"><img src="./和成（中国）有限公司_files/icon4.png"></a>
+        
+
+       </nav>
+       <div class="divSiteMap">
+       		<span class="span" onclick="javascript:location.href=&#39;/index_76.aspx&#39;" style="cursor:pointer">网站地图</span>
+            <div class="div">
+            	<dl>
+                	<dt><a href="http://www.hcg.com.cn/ppcs/index_14.aspx">关于和成</a></dt>
+                	<dd><a href="http://www.hcg.com.cn/ppcs/index_14.aspx">和成简介</a></dd>
+                	<dd><a href="http://www.hcg.com.cn/hcwh/index_18.aspx">和成文化</a></dd>
+                	<dd><a href="http://www.hcg.com.cn/hcgfzlc/index_20.aspx">品牌故事</a></dd>
+                	<dd><a href="http://www.hcg.com.cn/ry/list_26.aspx">荣誉证书</a></dd>
+                	<dd><a href="http://www.hcg.com.cn/spxs/list_28.aspx">视频欣赏</a></dd>
+                    
+                	<dd><a href="http://www.hcg.com.cn/hczx/list_29.aspx?lcid=570">和成资讯</a></dd>
+                    
+                </dl>
+            	<dl>
+                	<dt><a href="http://www.hcg.com.cn/wycp/index_31.aspx">和成产品</a></dt>
+                    
+                    <dd><a href="http://www.hcg.com.cn/wycp/index_31.aspx">卫浴产品</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/cgcp/index_32.aspx">橱柜产品</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/tcbb/index_33.aspx">陶瓷薄板</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/xzzx/index_34.aspx">下载中心</a></dd>
+                    
+                </dl>
+            	<dl>
+                	<dt><a href="http://www.hcg.com.cn/tcjs/list_36.aspx">和成技术</a></dt>
+                	
+                    <dd><a href="http://www.hcg.com.cn/tcjs/list_36.aspx">陶瓷技术</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/tqjs/list_37.aspx">铜器技术</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/znjs/list_38.aspx">智能技术</a></dd>
+                    
+                </dl>
+            	<dl>
+                	<dt><a href="http://www.hcg.com.cn/gcxm/list_39.aspx">工程项目</a></dt>
+                </dl>
+            	<dl>
+                	<dt><a href="http://www.hcg.com.cn/mdcx/list_41.aspx">联系和成</a></dt>
+                	
+                    <dd><a href="http://www.hcg.com.cn/mdcx/list_41.aspx">门店查询</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/swqt/index_42.aspx">商务洽谈</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/shfw/index_43.aspx">售后服务</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/rczm/list_44.aspx">人才招募</a></dd>
+                    
+                    <dd><a href="http://www.hcg.com.cn/gzhc/index_45.aspx">关注和成</a></dd>
+                    
+                </dl>
+            	<dl>
+                	<dt><a href="https://hcg.tmall.com/?spm=a1z10.3-b.1997427721.d4918089.STs8ek" target="_blank">网上商城</a></dt>
+                </dl>
+                <dl style="display:none;">
+                	<dt><a href="https://i.umeng.com/?spm=0.0.0.0.jQLXte" target="_blank">CNZZ</a></dt>
+                </dl>
+                <div class="clear"></div>
+            </div>
+       </div>
+       <div class="Copyright"><a href="javascript:void(0);" class="logo_icon"><img src="./和成（中国）有限公司_files/logo_icon.png"></a> Copyright © 2016 HCG  All rights reserved  沪ICP备09050280号. </div>
+       
+       
+        <!--返回顶部-->
+        <div class="toTop"></div>
+        <!--返回顶部-->
+    </div>
+</footer>
+
+
+
+
+<!--登录弹窗-->
+<div class="PopupBox LoginBox" style="height: 3677px;">
+  <div class="LoginCon">
+     <a href="javascript:;" class="closeBtn"></a>
+     <div class="LoginTitle">会员登录</div>
+     <form action="http://www.hcg.com.cn/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83-%E4%BC%9A%E5%91%98%E4%BF%A1%E6%81%AF.shtml" method="get">
+ 	   <input id="txt_username" type="text" value="" class="Loginname" placeholder="手机号码">
+     <input id="txt_password" type="password" value="" class="Loginpwd" placeholder="登录密码">
+     <div class="yzm">
+     <input id="dl_validator" type="text" class="Lyzm" placeholder="验证码">
+     <a href="javascript:$(&#39;#dl_yzm&#39;).click();" class="yzmImg"><img id="dl_yzm" src="./和成（中国）有限公司_files/CheckHandler.ashx" onclick="this.src=this.src+&#39;?&#39;"><span>换一张</span></a>
+     <div class="clear"></div>
+     <div id="div_alert" style="color:Red;float: left;margin-top: -7px;">
+     
+     </div>
+     </div>
+     <div class="goTo">
+      <!--<a href="javascript:;" id="txt_username" class="goLosePwd">忘记登录密码</a>-->
+      <a href="javascript:;" class="gozc">忘记密码</a>
+      <div class="clear"></div>
+     </div>
+     <a class="goLogin" href="javascript:;" onclick="Login()">立即登录</a>
+     <a href="javascript:;" class="btn_reg">免费注册</a>
+     </form>
+     
+
+<div class="OtherLogin">
+           <form method="post" action="http://www.hcg.com.cn/" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTMwNjQ2MzEzNQ9kFh4CAQ9kFgJmD2QWAmYPZBYeZg8VAg4vbGlzdF8yMTMuYXNweBMvaHloZC9saXN0XzE5Ny5hc3B4ZAIBDxUBEy9wcGNzL2luZGV4XzE0LmFzcHhkAgMPFQETL3BwY3MvaW5kZXhfMTQuYXNweGQCBQ8VARMvaGN3aC9pbmRleF8xOC5hc3B4ZAIHDxUBFi9oY2dmemxjL2luZGV4XzIwLmFzcHhkAgkPFQEQL3J5L2xpc3RfMjYuYXNweGQCCw8VARIvc3B4cy9saXN0XzI4LmFzcHhkAg0PZBYCZg9kFgJmDxUCEi9oY3p4L2xpc3RfMjkuYXNweAM1NzBkAg4PFQETL3d5Y3AvaW5kZXhfMzEuYXNweGQCEA9kFghmD2QWAmYPFQITL3d5Y3AvaW5kZXhfMzEuYXNweAzljavmtbTkuqflk4FkAgEPZBYCZg8VAhMvY2djcC9pbmRleF8zMi5hc3B4DOapseafnOS6p+WTgWQCAg9kFgJmDxUCEy90Y2JiL2luZGV4XzMzLmFzcHgM6Zm255O36JaE5p2/ZAIDD2QWAmYPFQITL3h6engvaW5kZXhfMzQuYXNweAzkuIvovb3kuK3lv4NkAhEPFQESL3RjanMvbGlzdF8zNi5hc3B4ZAITD2QWBmYPZBYCZg8VAhIvdGNqcy9saXN0XzM2LmFzcHgM6Zm255O35oqA5pyvZAIBD2QWAmYPFQISL3RxanMvbGlzdF8zNy5hc3B4DOmTnOWZqOaKgOacr2QCAg9kFgJmDxUCEi96bmpzL2xpc3RfMzguYXNweAzmmbrog73mioDmnK9kAhQPFQESL2djeG0vbGlzdF8zOS5hc3B4ZAIWDxUBEi9tZGN4L2xpc3RfNDEuYXNweGQCGA9kFgpmD2QWAmYPFQISL21kY3gvbGlzdF80MS5hc3B4DOmXqOW6l+afpeivomQCAQ9kFgJmDxUCEy9zd3F0L2luZGV4XzQyLmFzcHgM5ZWG5Yqh5rS96LCIZAICD2QWAmYPFQITL3NoZncvaW5kZXhfNDMuYXNweAzllK7lkI7mnI3liqFkAgMPZBYCZg8VAhIvcmN6bS9saXN0XzQ0LmFzcHgM5Lq65omN5oub5YufZAIED2QWAmYPFQITL2d6aGMvaW5kZXhfNDUuYXNweAzlhbPms6jlkozmiJBkAgIPZBYMZg9kFgZmDxUBiwFodHRwczovL2RldGFpbC50bWFsbC5jb20vaXRlbS5odG0/c3BtPWExejEwLjEtYi1zLnc1MDAzLTE2NTgxMDM5MjcwLjIuTEhGbFhCJmlkPTU1MDU4Nzk1MTg1MiZzY2VuZT10YW9iYW9fc2hvcCZza3VfcHJvcGVydGllcz0xNjI3MjA3OjI4MzQxZAIBDxUBHjIwMTcvMDYvMjAxNzA2MDkxMTExMzIxMTMyLmpwZ2QCAg8VAR4yMDE3LzA2LzIwMTcwNjA5MTExMTMyMTEzMi5qcGdkAgEPZBYGZg8VASNodHRwOi8vd3d3LmhjZy5jb20uY24vbGlzdF8yMTMuYXNweGQCAQ8VASLpppbpobViYW5uZXIvMjAxNzAyMjQxMDA0Mjg0MjguanBnZAICDxUBIummlumhtWJhbm5lci8yMDE3MDIyNDEwMDQyODQyOC5qcGdkAgIPZBYGZg8VAThodHRwOi8vd3d3LmhjZy5jb20uY24vaGN6eC9pbmZvXzI5LmFzcHg/aXRlbWlkPTUwJmxjaWQ9OGQCAQ8VASPpppbpobViYW5uZXIvMjAxNjA5MDUxNDExMTkxMTE5LmpwZ2QCAg8VASPpppbpobViYW5uZXIvMjAxNjA5MDUxNDExMTkxMTE5LmpwZ2QCAw9kFgZmDxUBO2h0dHA6Ly93d3cuaGNnLmNvbS5jbi93eWNwL2luZm9fMzEuYXNweD9pdGVtaWQ9NDExMiZsY2lkPTEzZAIBDxUBHjIwMTcvMDMvMjAxNzAzMDExNDMxNTczMTU3LmpwZ2QCAg8VAR4yMDE3LzAzLzIwMTcwMzAxMTQzMTU3MzE1Ny5qcGdkAgQPZBYGZg8VAY0BaHR0cHM6Ly9kZXRhaWwudG1hbGwuY29tL2l0ZW0uaHRtP3NwbT1hMXoxMC41LWItcy53NDAxMS0xNDQ1MDYzNjA4Ni42Ny5qeTVaQ2cmaWQ9NTMzNjQ1NDYyMTA4JnJuPWU4ZDliZTljMzY0MzdmNTc4NzI5ZTgwNTlkOTQ5Mzc0JmFiYnVja2V0PTE0ZAIBDxUBI+mmlumhtWJhbm5lci8yMDE2MDkwNTE0MTEyMzExMjMuanBnZAICDxUBI+mmlumhtWJhbm5lci8yMDE2MDkwNTE0MTEyMzExMjMuanBnZAIFD2QWBmYPFQEoaHR0cDovL3d3dy5oY2cuY29tLmNuL3N3cXQvaW5kZXhfNDIuYXNweGQCAQ8VASLpppbpobViYW5uZXIvMjAxNzAxMTYxNDUwMDM1MDMuanBnZAICDxUBIummlumhtWJhbm5lci8yMDE3MDExNjE0NTAwMzUwMy5qcGdkAgMPZBYGZg9kFgRmDxUBQGh0dHA6Ly93d3cuaGNnLmNvbS5jbi93eWNwL2luZm9fMzEuYXNweD9pdGVtaWQ9MTk5MCZsY2lkPTEzJmNpZD1kAgEPFQUi6aaW6aG1YmFubmVyLzIwMTYwOTA1MTQxMzAzMTMzLmpwZ0BodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTE5OTAmbGNpZD0xMyZjaWQ9EEM2NjBOQVcrQ0Y2NjBOQVc/5aWl5p+U6I6O57O75YiXIEM2NjBOQVcrQ0Y2NjBOQVc8YnI+DQrop4TmoLwgNzQwIHggNDcwIHggNjc1IG1tQGh0dHA6Ly93d3cuaGNnLmNvbS5jbi93eWNwL2luZm9fMzEuYXNweD9pdGVtaWQ9MTk5MCZsY2lkPTEzJmNpZD1kAgEPZBYEZg8VATtodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTQxMTImbGNpZD0xM2QCAQ8VBR0yMDE3LzAzLzIwMTcwMzAxMTUwNTM1NTM1LmpwZztodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTQxMTImbGNpZD0xMwpBRkMyMTAzVEFXPOi2hee6p+mprOahtuezu+WIlyBBRkMyMTAzVEFXPGJyPg0K6KeE5qC8IDczMCB4IDM5MCB4IDU3NSBtbTtodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTQxMTImbGNpZD0xM2QCAg9kFgRmDxUBQGh0dHA6Ly93d3cuaGNnLmNvbS5jbi93eWNwL2luZm9fMzEuYXNweD9pdGVtaWQ9MjA1OSZsY2lkPTEzJmNpZD1kAgEPFQUi6aaW6aG1YmFubmVyLzIwMTYwOTA1MTQxMzA1MTM1LmpwZ0BodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTIwNTkmbGNpZD0xMyZjaWQ9EUMzMDMyQVdaK0NGMzAzMkFXQOW4jOWwlOmhv+ezu+WIlyBDMzAzMkFXWitDRjMwMzJBVzxicj4NCuinhOagvCA3MjUgeCA0NTUgeCA2MTUgbW1AaHR0cDovL3d3dy5oY2cuY29tLmNuL3d5Y3AvaW5mb18zMS5hc3B4P2l0ZW1pZD0yMDU5JmxjaWQ9MTMmY2lkPWQCBA8VAhMvd3ljcC9pbmRleF8zMS5hc3B4Ey93eWNwL2luZGV4XzMxLmFzcHhkAgUPZBYCZg9kFgJmDxUCI+mmlumhtWJhbm5lci8yMDE2MDkwNTE0MTExODExMTguanBnAGQCBg9kFgJmD2QWBGYPFQFAaHR0cDovL3d3dy5oY2cuY29tLmNuL3d5Y3AvaW5mb18zMS5hc3B4P2l0ZW1pZD0xOTkwJmxjaWQ9MTMmY2lkPWQCAQ8VBCtwcm9kdWN0dHVpamlhbi/pppbpobXkuK3pl7Tkuqflk4HmjqjojZAuanBnQGh0dHA6Ly93d3cuaGNnLmNvbS5jbi93eWNwL2luZm9fMzEuYXNweD9pdGVtaWQ9MTk5MCZsY2lkPTEzJmNpZD0QQzY2ME5BVytDRjY2ME5BVz/lpaXmn5Tojo7ns7vliJcgQzY2ME5BVytDRjY2ME5BVzxicj4NCuinhOagvCA3NDAgeCA0NzAgeCA2NzUgbW1kAgcPZBYCZg9kFgJmDxUDEEM2NjBOQVcrQ0Y2NjBOQVcrcHJvZHVjdHR1aWppYW4v6aaW6aG15Lit6Ze05Lqn5ZOB5o6o6I2QLmpwZ0BodHRwOi8vd3d3LmhjZy5jb20uY24vd3ljcC9pbmZvXzMxLmFzcHg/aXRlbWlkPTE5OTAmbGNpZD0xMyZjaWQ9ZAIID2QWAmYPZBYCZg8VAxBDNjYwTkFXK0NGNjYwTkFXK3Byb2R1Y3R0dWlqaWFuL+mmlumhteS4remXtOS6p+WTgeaOqOiNkC5qcGdAaHR0cDovL3d3dy5oY2cuY29tLmNuL3d5Y3AvaW5mb18zMS5hc3B4P2l0ZW1pZD0xOTkwJmxjaWQ9MTMmY2lkPWQCCQ9kFgRmD2QWBGYPFQIeL2djeG0vaW5mb18zOS5hc3B4P2l0ZW1p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56eB55qE5Z2a5a6a5om/6K+677yMSENH5ZKM5oiQ5Y2r5rW054m55q2k5Yi26K6i5LqG5pys6ZqQ56eB5aOw5piO44CC5Lul5LiL5YaF5a656K+05piO5LqGSENH5ZKM5oiQ5Y2r5rW0572R56uZ5a625peP77yI566A56ew4oCc572R56uZ4oCd77yJ55qE5L+h5oGv5pS26ZuG5ZKM5Lyg5pKt6KGM5Li65YeG5YiZ44CC6K+35rOo5oSP77yM5aaC5p6c5oKo57uP55SxSENH5ZKM5oiQ5Y2r5rW0572R56uZ77yI5YyF5ous5Lu75L2VSENH5ZKM5oiQ5Y2r5rW05a2Q5YWs5Y+4572R56uZ77yJ6K6/6Zeu5aSW6YOo6ZO+5o6l77yM5YiZ5q2k57G75aSW6YOo572R56uZ5Y+v6IO96YCC55So54m55a6a55qE5LiN5ZCM6ZqQ56eB5pS/562W44CC5oiR5Lus5biM5pyb5oKo5a6M5pW06ZiF6K+75omA5pyJ6YCC55So55qE6ZqQ56eB5pS/562W44CCPC9wPjxwPgkxLuS4quS6uui1hOaWmeeahOaQnOmbhjwvcD48cD4J6K6/6ZeuSENH5ZKM5oiQ5Y2r5rW0572R56uZ5LiK55qE5p+Q5Lqb5Lqn5ZOB6LSt5Lmw54mI5Z2X5pe277yM5oKo5Y+v6IO96ZyA6KaB5rOo5YaM5ZCO5omN6IO95Lqr5Y+X5p+Q5Lqb5pyN5Yqh77yM5oiW6ICF5b2T5oKo5oOz5LqG6Kej5pu05aSa5YWz5LqO5q2k57G75Lqn5ZOB55qE5L+h5oGv5pe277yMSENH5ZKM5oiQ5Y2r5rW05Y+v6IO95Lya5pS26ZuG5oKo55qE5aeT5ZCN44CB55S16K+d5Y+356CB44CB55S15a2Q6YKu5Lu25Zyw5Z2A44CB5Ye655Sf5pel5pyf44CB5a625bqt5oiW5YWs5Y+46YKu5a+E5Zyw5Z2A562J5Liq5Lq65L+h5oGv77yI566A56ew4oCc5Liq5Lq65L+h5oGv4oCd77yJ44CC5aaC5p6c5oKo5Yaz5a6a6aKE6K6i5oiW6LSt5Lmw5oiR5Lus55qE5Lqn5ZOBL+acjeWKoe+8jOaIkeS7rOWPr+iDvei/mOmcgOaUtumbhuWFtuS7luS/oeaBr++8jOS+i+WmguaCqOeahOS/oeeUqOWNoeaIluWAn+iusOWNoei0puWPt+WSjOacieaViOacn+OAgkhDR+WSjOaIkOWNq+a1tOWwhuS4uuaCqOaPkOS+m+mZkOWItuS9v+eUqOWSjOaKq+mcsuaCqOeahOS4quS6uuS/oeaBr+eahOmAieaLqeWSjOaWueW8j++8jOS7pemYskhDR+WSjOaIkOWNq+a1tOWHuuS6juacgOWIneaUtumbhuebrueahOS5i+WklueahOWFtuS7luebrueahOS9v+eUqOaIluaKq+mcsuaCqOeahOS4quS6uuS/oeaBr+OAgjwvcD48cD4J5Zyo5YW25LuW5pe25YCZ77yMSENH5ZKM5oiQ5Y2r5rW05Y+v6IO95Lya5pS26ZuG5LiN6IO955So5LqO6K+G5Yir5oKo55qE6Lqr5Lu955qE5L+h5oGv44CC5L6L5aaC77yM5oiR5Lus5Y+v6IO95Lya5rGH5oC75oKo5ZKM6K6/6Zeu5oiR5Lus572R56uZ55qE5YW25LuW55So5oi355qE6Z2e5Liq5Lq65L+h5oGv44CC5rGH5oC755qE5L+h5oGv5LiN5Lya5YyF5ZCr5Lu75L2V5Y+v55u05o6l5LiO5oKo6IGU57O76LW35p2l55qE5L+h5oGv44CCPC9wPjxwPgkyLkhDR+WSjOaIkOWNq+a1tOWmguS9leaUtumbhuS4quS6uuS/oeaBrzwvcD48cD4JSENH5ZKM5oiQ5Y2r5rW05Y+v5Lul5L2/55So5ZCE56eN5bel5YW35p2l5pS26ZuG5LiO5oKo44CB5oKo55qE6K6h566X5py65o6l5YWl54K55ZKM5oKo55So5LqO6L+e5o6l6Iez5oiR5Lus572R56uZ55qE5rWP6KeI5Zmo55u45YWz55qE5L+h5oGv44CC5L6L5aaC77yM5oKo6K6/6Zeu5oiR5Lus55qE572R56uZ5pe277yM5oiR5Lus5Lya5Zyo5oKo55qE6K6h566X5py65oiW6K6+5aSH55qE56Gs55uY5oiW5YW25LuW5a2Y5YKo6K6+5aSH5LiK572u5YWl5LiA56eN5Y+r5YGaQ29va2ll55qE5bCP5paH5pys5paH5Lu244CC5oiR5Lus5Y+v6IO95Lya5L2/55SoQ29va2ll5p2l5Liq5oCn5YyW5oKo5LiO5oiR5Lus572R56uZ55qE5Lqk5LqS6KGM5Li644CC5oKo5bm26Z2e5b+F6aG75o6l5Y+X5oiR5Lus55qEQ29va2ll77yM5oKo5Y+v5Lul6YCa6L+H5rWP6KeI5Zmo6K6+572u5p2l6ZmQ5Yi25L2/55SoQ29va2ll77yM5oKo6L+Y5Y+v5Lul5Yig6Zmk572u5YWl5Yiw5oKo55qE56Gs55uY5oiW5YW25LuW5a2Y5YKo6K6+5aSH55qEQ29va2ll44CC5aaC5p6c5oKo5LiN5o6l5Y+X5oiW5Yig6Zmk5oiR5Lus55qEQ29va2ll77yM5oiR5Lus572R56uZ55qE5p+Q5Lqb5Yy65Z+f5Y+v6IO95Lya6ZyA6KaB5pu06ZW/5pe26Ze05p2l5bel5L2c77yM5oiW6ICF5peg5rOV5q2j5bi45bel5L2c44CCPC9wPjxwPgnmoLnmja7kuI3lkIzmrKfnm5/lm73lrrbvvIjljIXmi6zkvYbkuI3pmZDkuo7oi7Hlm73jgIHniLHlsJTlhbDjgIHopb/nj63niZnjgIHms5Xlm73jgIHlvrflm73jgIHmhI/lpKfliKnjgIHmr5TliKnml7blkozojbflhbDvvInnmoTms5XlvovvvIzlnKjkuKrkurrmuIXmmbDlubblhYXliIbkuobop6PlpITnkIblhbbkuKrkurrmlbDmja7nmoTnm67nmoTlubblkIzmhI/lkI7vvIzmlrnlj6/kvb/nlKhDb29raWXjgILoh7PlsJHlnKjkuIrov7Dmj5Dlj4rnmoTlm73lrrbvvIzlj6ropoHmgqjph4flj5bnp6/mnoHooYzliqjvvIzmgqjlsLHlj6/ku6Xkvb/nlKjmtY/op4jlmajorr7nva7mnaXmj5DkvpvmnInmlYjlkIzmhI/mhI/op4HjgILkvb/nlKhIQ0flkozmiJDljavmtbTnvZHnq5nkuYvliY3vvIzlu7rorq7mgqjmo4Dmn6XmgqjlvZPliY3nmoTmtY/op4jlmajorr7nva7vvIzku47ogIznoa7kv53ov5nkupvorr7nva7ooajmmI7mgqjlkIzmhI9IQ0flkozmiJDljavmtbTlnKjmgqjnmoTorr7lpIfkuIrnva7lhaVDb29raWXjgIJIQ0flkozmiJDljavmtbTnmoRDb29raWXmiqvpnLLlo7DmmI7or6bop4HmraTlpITjgILlpoLpnIDmnInlhbPlhbfkvZPmtY/op4jlmahDb29raWXpgInpobnnmoTmm7TlpJrkv6Hmga/vvIzor7forr/pl65odHRwOi8vd3d3LmFsbGFib3V0Y29va2llcy5vcmcv44CCPC9wPjxwPglIQ0flkozmiJDljavmtbTov5jlj6/og73kvJrlnKjmgqjmr4/mrKHorr/pl67miJHku6znmoTnvZHnq5nml7bku47mgqjnmoTmtY/op4jlmajmlLbpm4blhbbku5bkv6Hmga/jgILmiJHku6zlj6/og73kvJrmlLbpm4bnmoTkv6Hmga/ljIXmi6zmgqjorr/pl67nmoTpobXpnaLjgIHmgqjlnKjmr4/kuKrnvZHpobXmiJbnvZHnq5npg6jliIbkuIrnmoTlgZznlZnml7bpl7TjgIHmgqjngrnlh7vnmoTkv4PplIDmiJblub/lkYrvvIzku6Xlj4rmgqjlnKjkvb/nlKjmiJHku6znvZHnq5nml7bph4flj5bnmoTlhbbku5booYzliqjjgILov5nkupvkv6Hmga/lj6/og73kvJrljIXmi6zmgqjnmoTkupLogZTnvZHljY/orq7lnLDlnYDvvIhJUOWcsOWdgO+8ieOAgea1j+iniOWZqOexu+Wei+OAgea1j+iniOWZqOiuv+mXruaIkeS7rOe9keermeeahOaXtumXtO+8jOS7peWPiuaCqOWPr+iDveS9v+eUqOeahOmTvuaOpeiHs+aIkeS7rOe9keermeeahOS7u+S9leWFtuS7lue9keWdgOOAgjwvcD48cD4J5oiR5Lus55qE5LqS6IGU572R5pyN5Yqh5o+Q5L6b5ZWG77yI5a6a5LmJ6KeB5LiL5paH77yJ5Lmf5Y+v6IO95Lya5L2/55So5YW25LuW5qCH5YeG572R57uc5oqA5pyv5YiG5p6Q5oKo5Zyo6K6/6Zeu5oiR5Lus572R56uZ5pe255qE6KGM5Li644CC6L+Z5Lqb5oqA5pyv5YyF5ous572R57uc4oCc5L+h5qCH4oCd44CB4oCc5YOP57Sg5qCH562+4oCd44CB4oCc5riF5pmwR0lG4oCd562J44CC6L+Z5Lqb5oqA5pyv5pyJ5Yqp5LqO5oiR5Lus5LqG6Kej5Lqn5ZOB5ZKM5pyN5Yqh5a6j5Lyg6JCl6ZSA5rS75Yqo55qE5pWI5p6c77yM5a+55oiR5Lus572R56uZ5o+Q5L6b55qE5pyN5Yqh6L+b6KGM5a6a5Yi277yM5biu5Yqp5oiR5Lus5Lul5pyA5L2z5pa55byP5L2/55So572R56uZ5YaF5a6544CB5Lqn5ZOB5ZKM5pyN5Yqh44CC5YyF5ousSVDlnLDlnYDlnKjlhoXnmoTkuIDkupvkv6Hmga/lj6/og73kvJrlrZjlgqjlnKjmiJHku6znmoTkupLogZTnvZHmnI3liqHmj5DkvpvllYbnmoTmnI3liqHlmajml6Xlv5fkuK3vvIzlj6/kvpvplb/mnJ/kvb/nlKjjgII8L3A+PHA+CeiZveeEtkhDR+WSjOaIkOWNq+a1tOmHh+WPluS4gOWIh+i0n+i0o+S7u+eahOaOquaWveS/neaKpOe9keermeiuv+mXruiAheeahOmakOenge+8jOS9huaYr0hDR+WSjOaIkOWNq+a1tOaXoOazleaJv+ivuuWFtuW9k+WJjeWcqOe6v+W6lOeUqOeoi+W6j+iuvuiuoeiDveWkn+mAguW6lOaJgOaciea1j+iniOWZqOiuvue9ru+8jOaIlua7oei2s+aJgOacieS4quS6uua1j+iniOWZqOeahOmmlumAiemhueOAguWFt+S9k+iAjOiogO+8jEhDR+WSjOaIkOWNq+a1tOWwmuacquWunuaWveWunueOsOKAnOS4jei3n+i4quKAnea1j+iniOWZqOS/oeWPt+aJgOW/hemcgOeahOeoi+W6j+WPmOabtOOAgumaj+edgEhDR+WSjOaIkOWNq+a1tOWcqOe6v+W6lOeUqOeoi+W6j+iuvuiuoeeahOS4jeaWreS8mOWMlu+8jEhDR+WSjOaIkOWNq+a1tOWwhumHh+WPluS4gOWIh+WQiOeQhuaOquaWveWcqOacquadpea7oei2s+i/meexu+ivt+axguOAguivt+e7j+W4uOafpeeci+acrOmakOengeaUv+etlu+8jOS6huino+acrOS4u+mimOaWuemdoueahOabtOaWsOOAgjwvcD48cD4J5q2k5aSW77yMSENH5ZKM5oiQ5Y2r5rW055qE5LqS6IGU572R5pyN5Yqh5o+Q5L6b5ZWG5oiW5o6I5p2D56ys5LiJ5pa577yI5a6a5LmJ6KeB5LiL5paH77yJ5Y+v6IO95Lya5L2/55So5YWB6K646ZqP5pe26Leo572R56uZ5pS26ZuG5Liq5Lq65L+h5oGv55qE5oqA5pyv44CCSENH5ZKM5oiQ5Y2r5rW05bu66K6u5oKo6ZiF6K+75oKo6K6/6Zeu55qE5q2k57G7572R56uZ5LiK5Y+R5biD55qE5omA5pyJ6ZqQ56eB5pS/562W77yM5LuO6ICM5pu05aW95Zyw55CG6Kej5YW25L+d5oqk6ZqQ56eB55qE5YGa5rOV44CCPC9wPjxwPgkzLumAieaLqTwvcD48cD4J6ZKI5a+55oKo55qE5Liq5Lq65L+h5oGv6IO95ZCm77yIYe+8ieaKq+mcsue7meesrOS4ieaWue+8jOaIlu+8iGLvvInnlKjkuo7pnZ7kv6Hmga/mlLbpm4bliJ3lp4vnm67nmoTmiJblhbblkI7nlLHmgqjmjojmnYPnmoTnm67nmoTvvIxIQ0flkozmiJDljavmtbTlsIblkJHmgqjmj5DkvpvpgInmi6nmnLrkvJrvvIjmjqXlj5cv5pS+5byD77yJ44CCPC9wPjxwPgk0LuaIkeS7rOWvueaCqOeahOS4quS6uuWPiumdnuS4quS6uuS/oeaBr+eahOS9v+eUqOWSjOaKq+mcsjwvcD48cD4J5pyJ5pe25YCZ77yMSENH5ZKM5oiQ5Y2r5rW05Y+v6IO95Lya5Yip55So54us56uL5YWs5Y+477yI4oCc5LqS6IGU572R5pyN5Yqh5o+Q5L6b5ZWG4oCd5oiW4oCc57uP5o6I5p2D55qE56ys5LiJ5pa54oCd77yJ55qE5pyN5Yqh5Li65oKo5o+Q5L6b5p+Q5Lqb5pyN5Yqh77yM5YyF5ous5L2G5LiN6ZmQ5LqO572R56uZ5omY566h5pyN5Yqh44CB5L+h55So5Y2h5aSE55CG44CB6K6i5Y2V5aSE55CG44CB6YCB6LSn5pyN5Yqh5ZKM6K6/5a6i6LCD5p+l6Zeu5Y2344CCSENH5ZKM5oiQ5Y2r5rW05Y+v6IO95Lya5Lul5oGw5b2T5pa55byP5LiO5LqS6IGU572R5pyN5Yqh5o+Q5L6b5ZWG5YWx5Lqr5oKo55qE5Liq5Lq65L+h5oGv44CC5pyq57uP5oKo55qE6K645Y+v77yMSENH5ZKM5oiQ5Y2r5rW05LiN5Lya5LiO5aSW6YOo56ys5LiJ5pa55YWx5Lqr5oKo55qE5Liq5Lq65L+h5oGv77yM5L2G5Li65LqG5o+Q5L6b5oKo6YCa6L+HSENH5ZKM5oiQ5Y2r5rW0572R56uZ6K+35rGC55qE5Lqn5ZOB5ZKM5pyN5Yqh6ICM5b+F6aG75YWx5Lqr5Liq5Lq65L+h5oGv55qE5oOF5Ya16Zmk5aSW44CCPC9wPjxwPglIQ0flkozmiJDljavmtbTlj6/og73kvJrkvb/nlKjmgqjnmoTkuKrkurrkv6Hmga/pgJrov4fmma7pgJrpgq7ku7bjgIHnlLXlrZDpgq7ku7bvvIjlpoLmnpzmgqjpgInmi6nmjqXmlLZIQ0flkozmiJDljavmtbTlj5HpgIHnmoTnlLXlrZDpgq7ku7bvvInmiJbnlLXor53ogZTns7vmgqjvvIzlkYrnn6XmgqhIQ0flkozmiJDljavmtbTnmoTmnIDmlrDnibnliKvmtLvliqjjgIHmlrDmnI3liqHjgIHkuqflk4HlvZPliY3kv6Hmga/miJblhbbku5bmgqjlj6/og73mhJ/lhbTotqPnmoTkvJjmg6DmtLvliqjjgILlpoLmnpzmgqjmmK/kuIDlrrborqHliJLlnKjmiJHku6znmoTlnLrlnLDlhoXlvIDlsZXkvJrorq7miJbmtLvliqjnmoTkvIHkuJrmiJbmnLrmnoTvvIzliJlIQ0flkozmiJDljavmtbTkuZ/lj6/og73kvJrkuI7mtLvliqjnu4Tnu4fmlrnlhbHkuqvmgqjnmoTkuKrkurrkv6Hmga/jgIJIQ0flkozmiJDljavmtbTov5jlj6/og73kvJrkvb/nlKjlm57kv6HnlLXlrZDpgq7ku7blnLDlnYDmnaXlr7nmgqjlkJHmiJHku6zlj5HpgIHnmoTnlLXlrZDpgq7ku7blgZrlh7rlm57lpI3jgILmgqjnmoTnlLXlrZDpgq7ku7blnLDlnYDkuI3kvJrooqvnlKjkuo7ku7vkvZXlhbbku5bnm67nmoTvvIzkuZ/kuI3kvJrkuI7lpJbpg6jnrKzkuInmlrnlhbHkuqvku6XnlKjkuo7lhbbnm7TmjqXokKXplIDnm67nmoTjgIJIQ0flkozmiJDljavmtbTov5jlj6/og73kvJrkvb/nlKjmgqjnmoRJUOWcsOWdgOadpeW4ruWKqeS/neaKpEhDR+WSjOaIkOWNq+a1tOWPiuWFtuS6kuiBlOe9keacjeWKoeaPkOS+m+WVhuWFjeWPl+asuuiviOihjOS4uuaNn+Wus+OAgjwvcD48cD4J5YW25LuW5a+55oKo55qE6Z2e5Liq5Lq65ZKM5Liq5Lq65L+h5oGv55qE5L2/55So5pyJ5Yqp5LqOSENH5ZKM5oiQ5Y2r5rW05qC55o2u5oKo55qE6ZyA5rGC5a6a5Yi25Lqn5ZOB5ZKM5pyN5Yqh77yM5biu5Yqp57uE57uH5ZKM566h55CG5oiR5Lus5LiO5oKo5oiW5oKo5LyB5Lia55qE5YWz57O777yM5byA5bGV5Lia5Yqh77yM5Li65oKo5o+Q5L6b5a6i5oi35ZKM6K6/5a6i5pSv5oyB77yM5omn6KGM5L+h5oGv5pS26ZuG5pe25ZCR5oKo5o+P6L+w55qE5Yqf6IO977yM5Lul5Y+K5omn6KGM5oiR5Lus572R56uZ55qE5L2/55So5p2h5qy+44CCPC9wPjxwPgnmiJHku6zkuZ/lj6/og73kvJrliKnnlKjpnZ7kuKrkurrmsYfmgLvkv6Hmga/mnaXmlLnlloTmiJHku6znmoTnvZHnq5njgILkvovlpoLvvIzmiJHku6znmoTkupLogZTnvZHmnI3liqHmj5DkvpvllYblj6/og73kvJrlkJHmiJHku6zmiqXlkYrvvIznp7DmiJHku6znvZHnq5nnmoTmn5DkuKrljLrln5/mnInnibnlrprmlbDph4/nmoTorr/lrqLvvIzmiJbkuIDlrprmlbDph4/nmoTkvIHkuJrmiJbkuKrkurrlnKjmiJHku6znvZHnq5nnmoTnibnlrprljLrln5/loavlhpnkuobms6jlhozooajmoLzjgILov5nkupvkv6Hmga/kuZ/lj6/og73kvJrnlKjkuo7liIbmnpDmiJHku6znmoTkuJrliqHlkozlub/lkYrmqKHlvI/nmoTmlYjmnpzjgII8L3A+PHA+CeWmguaenOaCqOaPkOS6pOS6hueugOWOhuaIluWvu+axgua7oei2s+WFtuS7luS6uuWRmOaLm+iBmOmcgOaxgu+8jOaIkeS7rOS8muWwhui/meS6m+S/oeaBr+S7heeUqOS6juS4juaCqOW9k+WJjeaIluacquadpeS6uuWRmOaLm+iBmOmcgOaxgueUs+ivt+ebuOWFs+eahOaWuemdou+8jOaIkeS7rOS5n+WPr+iDveS8muWwhuaCqOeahOeugOWOhuaIlueUs+ivt+S/oeaBr+S4juaIkeS7rOeahOacieaCqOespuWQiOi1hOagvOeahOS6uuWRmOaLm+iBmOmcgOaxgueahOS4muWKoeWQiOS9nOS8meS8tOaIluWIhuaUr+acuuaehOWFseS6q+OAgjwvcD48cD4J5Zyo5Lul5LiL5b+F6KaB5p2h5Lu25LiL77yMSENH5ZKM5oiQ5Y2r5rW05Lmf5Y+v6IO95Lya6YCP6Zyy5oKo55qE5Liq5Lq65L+h5oGv77ya77yIYe+8iemBteWuiOS8oOelqOaIluazleW6reWRveS7pO+8mzwvcD48cD4J77yIYu+8ieS4juaJp+azlemDqOmXqOaIluWFtuS7luaUv+W6nOacuuaehOWQiOS9nO+8mzwvcD48cD4J77yIY++8ieW7uueri+aIluihjOS9v+aIkeS7rOeahOWQiOazleadg+WIqe+8mzwvcD48cD4J77yIZO+8ieS/neaKpOaIkeS7rOeahOWFrOWPuOOAgeWRmOW3peOAgeaJv+WMheWVhuOAgeaPkOS+m+WVhuWSjOWuouaIt+eahOi0ouS6p+aIluWuieWFqO+8m++8iGXvvInpmLLojIPms5XlvovntKLotZTvvJs8L3A+PHA+Ce+8iGbvvInljY/liqnov5vooYzlhoXpg6jlkozlpJbpg6josIPmn6XvvJs8L3A+PHA+Ce+8iGfvvInms5Xlvovlj6bmnInop4TlrprmiJblhYHorrjnmoTlhbbku5bmg4XlhrXjgIJIQ0flkozmiJDljavmtbTlj6/og73kvJrlh7rkuo7miJHku6zlhazlj7jnmoTlh7rllK7miJblubbotK3miJbku7vkvZXmtonlj4rmiJHku6zotYTkuqfnmoTpg6jliIbmiJblhajpg6jlh7rllK7miJbovazorqnkuqTmmJPmiqvpnLLmgqjnmoTkuKrkurrkv6Hmga/jgII8L3A+PHA+CTUu5pWw5o2u5a2Y5YKo5ZKM5a6J5YWoPC9wPjxwPglIQ0flkozmiJDljavmtbTph4flj5blkIjnkIbmjqrmlr3noa7kv53kupLogZTnvZHmnI3liqHmj5DkvpvllYblt7Llrp7mlr3niannkIbjgIHnlLXlrZDjgIHmioDmnK/jgIHnu4Tnu4flkoznqIvluo/kuIrnmoTlronlhajkv53pmpzmjqrmlr3vvIzku47ogIzljY/liqnkv53miqTmgqjnmoTkuKrkurrkv6Hmga/vvIzpmLLmraLmnKrnu4/mjojmnYPnmoTorr/pl67lkozmiqvpnLLjgILlj6rmnInnu4/miJHku6zmjojmnYPnmoTkurrlkZjlkozkuLpIQ0flkozmiJDljavmtbTmiafooYzms5XlrprkuJrliqHogYzog73nmoTkupLogZTnvZHmnI3liqHmj5DkvpvllYbmiY3mnInmnYPorr/pl67mgqjnmoTkuKrkurrkv6Hmga/jgILomb3nhLbmiJHku6zlgL7lsL3liqrlipvvvIzkvYbmmK/kupLogZTnvZHmnInlhbblm7rmnInnmoTlronlhajpo47pmanjgIJIQ0flkozmiJDljavmtbTml6Dms5Xmib/or7rjgIHmgqjkuZ/kuI3lupTmnJ/mnJvmgqjnmoTkuKrkurrkv6Hmga/jgIHkuKrkurrmkJzntKLlkozlhbbku5bpgJrkv6Hlp4vnu4jkv53mjIHlronlhajjgILmgqjlupTlsI/lv4PlpITnkIblkozmiqvpnLLmgqjnmoTkuKrkurrkv6Hmga/vvIzku6Xlj4rorr/pl67miJHku6znvZHnq5nmnI3liqHmiYDpnIDnmoTnlKjmiLflkI3lkozlr4bnoIHjgII8L3A+PHA+CTYu5YS/56ul5ZKM5pWw5o2u5pS26ZuGPC9wPjxwPglIQ0flkozmiJDljavmtbTnvZHnq5nmmK/pnaLlkJHmma7pgJrlj5fkvJfnmoTnvZHnq5njgIJIQ0flkozmiJDljavmtbTnvZHnq5nlhoXlrrnkuI3pgILlrpzkuo4xM+WygeS7peS4i+WEv+erpea1j+iniOOAguaIkeS7rOS4jeS8muaVheaEj+aUtumbhuWEv+erpeeahOS4quS6uuS/oeaBr+OAguWmguaenEhDR+WSjOaIkOWNq+a1tOaIluWFtuS6kuiBlOe9keacjeWKoeaPkOS+m+WVhuWPkeeOsOacieWEv+erpeacque7j+aIkOS6uuiuuOWPr+WQkeaIkeS7rOaPkOS+m+S6huS4quS6uuS/oeaBr++8jOaIkeS7rOWwhuS7juaVsOaNruW6k+S4reWIoOmZpOatpOexu+S/oeaBr+OAgjwvcD48cD4JNy7lpoLkvZXorr/pl67lkozmm7TmlLlIQ0flkozmiJDljavmtbTmlLbpm4bnmoTkuKrkurrkv6Hmga88L3A+PHA+CeaCqOmmluasoemAmui/h+aIkeS7rOe9keermeaPkOS+m+azqOWGjOS/oeaBr+aXtu+8jOaIkeS7rOWPr+iDveS8muWQkeaCqOaPkOS+m+iuoumYheWSjOaOpeaUtuS4juaIkeS7rOS6p+WTgeWSjOacjeWKoeebuOWFs+eahOabtOWkmuS/oeaBr+eahOacuuS8muOAguaIkeS7rOWPkemAgee7meaCqOeahOavj+S4gOWwgeWVhuS4mueUteWtkOmCruS7tuS4reWdh+S8muS4uuaCqOaPkOS+m+aUvuW8g+e7p+e7reaOpeaUtuatpOexu+mCruS7tueahOacuuS8muOAguWkhOeQhuaCqOeahOaUvuW8g+ivt+axguWPr+iDvemcgOimgeWNge+8iDEw77yJ5Liq5bel5L2c5pel44CC5Zyo5p+Q5Lqb5oOF5Ya15LiL77yM5Zyo5oKo5pu05pS55oKo55qE5L+h5oGv6aaW6YCJ6aG55LmL5YmN77yM5oiR5Lus5Y+v6IO95Lya5bey57uP5LiO57uP5o6I5p2D55qE56ys5LiJ5pa55YWx5Lqr5LqG5oKo55qE5L+h5oGv77yM5Zug5q2k77yM5oKo5Y+v6IO95Lya5Zyo6YCJ5oup5pS+5byD5LmL5ZCO55qE5LiA5q615pe26Ze05YaF5pqC5pe257un57ut5pS25Yiw55S15a2Q6YKu5Lu244CC5qC55o2u576O5Zu96IGU6YKm6LS45piT5aeU5ZGY5Lya77yIRlRD77yJ55S15a2Q6YKu5Lu25ZCI6KeE5oyH5a+877yM5oiR5Lus5Y+v5Lul5ZCR5oKo5Y+R6YCB5Lqk5piT5ZKM5YWz57O755S15a2Q6YKu5Lu277yM6ICM5LiN5Li65oKo5o+Q5L6b6YCJ5oup5pS+5byD5o6l5pS25q2k57G755S15a2Q6YKu5Lu255qE5py65Lya44CCPC9wPjxwPgnlr7nkuo7lsYXkvY/lnKjmrKfnm5/nmoTnvZHnq5nnlKjmiLfvvIzmiJHku6zlv4Xpobvkvp3ms5XlkYrnn6XmgqjvvIzmgqjnmoTkuKrkurrkv6Hmga/lj6/og73kvJrooqvmnaXoh6rkuJbnlYzlhbbku5blnLDljLrnmoTkuKrkurrorr/pl67vvIzogIzmrKfnm5/lp5TlkZjkvJrlt7Lnoa7orqTpg6jliIbmraTnsbvlm73lrrbmj5DkvpvnmoTmlbDmja7kv53miqTnuqfliKvlj6/og73kuI7mgqjnmoTmiYDlnKjlm73kuI3lsL3nm7jlkIzjgILlkJHmiJHku6zmj5DkvpvmgqjnmoTkuKrkurrkv6Hmga/ljbPooajnpLrmgqjlkIzmhI/miJHku6zmjInnhadIQ0flkozmiJDljavmtbTpmpDnp4HmlL/nrZblr7nlhbbov5vooYzkvb/nlKjvvIzljIXmi6zmjInnhaflvZPlnLDms5XlvovlnKjljIXmi6zkvYbkuI3pmZDkuo7nvo7lm73nmoTlhajnkIPkuI3lkIzlj7jms5XnrqHovpbljLrlhoXkvKDovpPmgqjnmoTkuKrkurrkv6Hmga/jgII8L3A+PHA+Cee+juWbveeahOaVsOaNrumakOengeazleW+i+WPr+iDveaXoOazleaPkOS+m+S4juasp+ebn+azleW+i+ebuOWQjOeahOS4quS6uuS/oeaBr+S/neaKpOe6p+WIq++8jOS9huaYr+ivt+aUvuW/g++8jEhDR+WSjOaIkOWNq+a1tOWwhue7p+e7remBteWuiOacrOmakOengeaUv+etluWSjOWFtuS7luS4juS4quS6uuS/oeaBr+ebuOWFs+eahOazleW+i+aJgOinhOWumueahOWOn+WImeOAgkhDR+WSjOaIkOWNq+a1tOWwhuWKquWKm+S/neaKpOS4quS6uuaVsOaNrueahOWujOaVtOaAp+OAgeacuuWvhuaAp+WSjOWuieWFqOaAp++8jOW5tuWvueatpOexu+S4quS6uuS/oeaBr+mHh+WPlui2s+Wkn+e6p+WIq+eahOS/neaKpOOAgjwvcD48cD4JOC7mlbDmja7lrozmlbTmgKc8L3A+PHA+CUhDR+WSjOaIkOWNq+a1tOWPquWHuuS6juS4quS6uuS/oeaBr+aUtumbhuebrueahOaIlue7j+aCqOaOiOadg+eahOebrueahOWvueS4quS6uuS/oeaBr+i/m+ihjOWkhOeQhuOAguWHuuS6jui/meS6m+ebrueahO+8jEhDR+WSjOaIkOWNq+a1tOWwhumHh+WPluWQiOeQhuatpemqpOehruS/neS4quS6uuS/oeaBr+WvuemihOacn+eUqOmAlOeahOWPr+mdoOaAp+OAgjwvcD48cD4JOS7miafooYw8L3A+PHA+CUhDR+WSjOaIkOWNq+a1tOmHh+eUqOiHquaIkeivhOS8sOeahOaWueW8j+ehruS/nemBteWuiOacrOmakOengeaUv+etlu+8jOW5tuWumuacn+mqjOivgeaUv+etlueahOato+ehruaAp+OAgeWvueaJgOa2ieS/oeaBr+eahOWFqOmdouaAp++8jOW5tumqjOivgeacrOmakOengeaUv+etluaYr+WQpuWcqOaYvuiRl+S9jee9ruaYvuekuuOAgeWujOaVtOWunuaWveOAgeWPr+S7peiuv+mXruS7peWPiuespuWQiOasp+ebn+WItuiuoueahOmakOengeWOn+WImeOAguaIkeS7rOm8k+WKseacieWFtOi2o+eahOS6uuWjq+mAmui/h+aPkOS+m+eahOiBlOezu+aWueW8j+aPkOWHuumXrumimO+8jOaIkeS7rOS8mui/m+ihjOiwg+afpe+8jOW5tuWwneivleino+WGs+S4juaMieeFp+i/meS6m+WOn+WImeS9v+eUqOWSjOaKq+mcsuS4quS6uuS/oeaBr+ebuOWFs+eahOaKleivieWSjOe6oOe6t+OAgjwvcD48cD4JMTAu5LiA6Iis5L+h5oGv5ZKM6ZqQ56eB5pSv5oyB6IGU57O75pa55byPPC9wPjxwPglIQ0flkozmiJDljavmtbTlj6/og73kvJrpmo/ml7bmm7TmlrDmnKzpmpDnp4HmlL/nrZbvvIzlu7rorq7mgqjlnKjmr4/mrKHorr/pl67miJHku6znvZHnq5nml7blnYfkuojku6XpmIXor7vjgIJIQ0flkozmiJDljavmtbTmib/or7rkv53miqTmgqjnmoTkuKrkurrpmpDnp4HjgILlpoLmnpzmgqjmnInku7vkvZXkuI7miJHku6zkv53miqTmgqjnmoTkuKrkurrpmpDnp4HnmoTmjqrmlr3nm7jlhbPnmoTpl67popjmiJbmhI/op4HvvIzmiJbluIzmnJvkuobop6PkuI5IQ0flkozmiJDljavmtbTpmpDnp4Hkv53miqTmib/or7rnm7jlhbPnmoTmm7TlpJrkv6Hmga/vvIzor7fogZTns7vmiJHku6zjgII8L3A+ZAIPDxUBAGRkvNa9TgnN6Puxh3rw6vvPuSAxT0M=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987">
+</div>
+ <a id="ctl12_ctl00_ctl20_ctl00_SinaLogin" class="Loginweico" href="javascript:__doPostBack(&#39;ctl12$ctl00$ctl20$ctl00$SinaLogin&#39;,&#39;&#39;)">微博登录
+ </a><a id="ctl12_ctl00_ctl20_ctl00_QLogin" class="Loginqq" href="javascript:__doPostBack(&#39;ctl12$ctl00$ctl20$ctl00$QLogin&#39;,&#39;&#39;)">QQ登录
+ </a>
+</form>
+</div>
+
+     <!--<div class="OtherLogin">
+       <a href="javascript:;" class="Loginweico">微博登录</a>
+       <a href="javascript:;" class="Loginqq">QQ登录</a>
+     </div>-->
+  </div> 
+</div>
+
+
+
+<script type="text/javascript">
+    function Login() {
+        var loginName = $("#txt_username").val();
+        var password = $("#txt_password").val();
+        var dl_validator = $("#dl_validator").val();
+        var data = "";
+
+        if (loginName == "") {
+            $("#txt_username").css("border", "1px solid red");
+            return;
+        }
+        else {
+            $("#txt_username").css("border", "");
+        }
+        if (password == "") {
+            $("#txt_password").css("border", "1px solid red");
+            return;
+        }
+        else {
+            $("#txt_password").css("border", "");
+        }
+        if ($.trim(dl_validator) == '') {
+            $("#dl_validator").css("border", "1px solid red");
+            return;
+        }
+        else {
+            $("#dl_validator").css("border", "");
+        }
+        if ($.trim(dl_validator) != '' && $.trim(dl_validator).length < 4) {
+            $("#dl_validator").css("border", "1px solid red");
+            return;
+        }
+        else {
+            $("#dl_validator").css("border", "");
+        }
+
+        data = { LoginName: loginName, Password: password, validator: dl_validator };
+
+        $.ajax({
+            url: "/label/member/login.aspx", //没有用到 wtl:resource 置标时用此路径
+            type: "POST",
+            cache: false,
+            data: data,
+            success: function(state) {
+                switch (state) { //返回0：用户名或密码错误；1:帐号未审核；2：登录成功；3:回收站
+                    case "-1":
+                        $("#div_alert").html("验证码不正确");
+                        $("#dl_yzm").click();
+                        break;
+                    case "0":
+                        $("#div_alert").html("手机号或密码错误");
+                        break;
+                    case "1":
+                        $("#div_alert").html("帐号未审核");
+                        break;
+                    case "2":
+                        location.href ='/index.aspx';
+                        break;
+                    case "3":
+                        $("#div_alert").html("帐号已被冻结");
+                        break;
+                    default:
+                        $("#div_alert").html("登录失败");
+                        break;
+                }
+            },
+            error: function() {
+                //alert("登录失败");
+            }
+        });
+    }
+    </script>
+<!--登录弹窗-->
+
+<!--找回密码-->
+<div class="PopupBox GetbackBox">
+  <div class="LoginCon">
+     <a href="javascript:;" class="closeBtn"></a>
+     <div class="Title">找回密码</div>
+     <p class="p">请输入邮箱地址，我们将会发送一个链接到你邮箱供你重置密码。</p>
+     <form action="http://www.hcg.com.cn/" method="get">
+     <input id="txt_yxdz" type="text" value="" class="" placeholder="邮箱地址">
+     <a id="a_ljfs" class="btn" href="javascript:;" onclick="FaSongEmail()">立即发送</a>
+     <div id="div_fscg" class="PromptBox"></div>
+     </form>
+  </div> 
+</div>
+<script type="text/javascript">
+
+  $(".LoginBox .gozc").click(function(){
+    $(".PopupBox").hide();
+    $(".GetbackBox").show();
+  })
+  $(".GetbackBox .closeBtn").click(function(){
+    $(".GetbackBox").hide();
+})
+
+function FaSongEmail() {
+    var myemail = $("#txt_yxdz").val();
+    if (myemail == "") {
+        $("#txt_yxdz").css("border", "1px solid red");
+        return;
+    }
+    $.ajax({
+        url: "/Ajax/FaSongEmail.aspx",
+        type: "POST",
+        cache: false,
+        data: { myemail: "" + escape(myemail) + "" },
+        success: function(state) {
+            if (state == 1) {
+                $("#txt_yxdz").css("border", "");
+                $("#a_ljfs").html("发送成功");
+                $("#a_ljfs").removeAttr("onclick");
+                $("#div_fscg").html("密码重置链接已经发送到您的邮箱，请注意查收！");
+            }
+            else if (state == -1) {
+                $("#div_fscg").html("请填写正确的邮箱地址！");
+            }
+            else {
+                $("#div_fscg").html("发送失败！");
+            }
+        },
+        error: function(result) {
+            //alert(result);
+        }
+    });
+}
+</script>
+<!--找回密码-->
+
+<!--重置密码-->
+<div class="PopupBox ResetBox">
+  <div class="LoginCon">
+     <a href="javascript:;" class="closeBtn"></a>
+     <div class="Title">重置密码</div>
+     <p class="p">请输入一个新的密码</p>
+     <form action="http://www.hcg.com.cn/" method="get">
+     <input id="txt_czmm" type="password" value="" class="" placeholder="密码">
+     <input id="txt_czqrmm" type="password" value="" class="" placeholder="确认密码">
+     <a class="btn" href="javascript:;" onclick="ChongZhiMiMa()">重置密码</a>
+     <div id="div_czmm" class="PromptBox"></div>
+     </form>
+  </div> 
+</div>
+<script type="text/javascript">
+  $(".ResetBox .closeBtn").click(function(){
+    $(".ResetBox").hide();
+})
+
+//跨页传值获取   
+function request(paras) {
+
+    var url = location.href;
+
+    var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+
+    var paraObj = {}
+
+    for (i = 0; j = paraString[i]; i++) {
+
+        paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+
+    }
+
+    var returnValue = paraObj[paras.toLowerCase()];
+
+    if (typeof (returnValue) == "undefined") {
+
+        return "";
+
+    } else {
+
+        return returnValue;
+
+    }
+}
+
+function ChongZhiMiMa() {
+    var txt_new = $("#txt_czmm").val();
+    var txt_qrmm = $("#txt_czqrmm").val();
+    var data = "";
+    if (txt_new == "") {
+        $("#txt_czmm").css("border", "1px solid red");
+        return;
+    }
+    if (txt_qrmm == "") {
+        $("#txt_czqrmm").css("border", "1px solid red");
+        return;
+    }
+    if (txt_qrmm != txt_new) {
+        $("#txt_czqrmm").css("border", "1px solid red");
+        return;
+    }
+    data = { password: "" + escape(txt_new) + "", email: "" + request("email") + "" };
+    $.ajax({
+        url: "/Ajax/ChongZhiMiMa.ashx", //没有用到 wtl:resource 置标时用此路径
+        cache: false,
+        data: data,
+        success: function(state) {
+            switch (state) { //返回0：用户名或密码错误；1:帐号未审核；2：登录成功；3:回收站
+                case "0":
+                    $("#div_czmm").html("重置失败！");
+                    break;
+                case "1":
+                    $("#div_czmm").html("您的密码已经成功重置！");
+                    location.href ='/index.aspx';
+                    break;
+            }
+        },
+        error: function() {
+            //alert("登录失败");
+        }
+    });
+}
+</script>
+<!--重置密码-->
+
+<!--注册页面-->
+<form id="whir_16" res="whirform">
+<div class="PopupBox registerBox" style="height: 3677px;">
+   <div class="registerCon">
+      <a href="javascript:;" class="closeBtn"></a>
+      <div class="rgtLeft">
+        <div class="title">请选择您的账户类型<br>您是？</div>
+        <ul class="ul">
+          <input type="hidden" id="18257" name="18257"><span name="whirValidator" validatorfor="18257" required="True" requiredmsg="账户类型为必选"></span> 
+           
+          <li><a href="javascript:ClickLx(this,&#39;5&#39;);" class="youType">消费者</a></li>
+           
+          <li><a href="javascript:ClickLx(this,&#39;4&#39;);" class="youType">家装设计师</a></li>
+           
+          <li><a href="javascript:ClickLx(this,&#39;3&#39;);" class="youType">工装设计师</a></li>
+           
+          <li><a href="javascript:ClickLx(this,&#39;2&#39;);" class="youType">开发商</a></li>
+           
+          <li><a href="javascript:ClickLx(this,&#39;1&#39;);" class="youType">经销商</a></li>
+          
+        </ul>
+      </div>
+      <script type="text/javascript">
+          function ClickLx(obj,id) {
+              $(obj).addClass("on");
+              $("#18257").val(id);
+          }
+      </script>
+      <div class="rgtRight">
+        <div class="title">会员注册</div>
+        <div class="rgtList">
+          <input type="hidden" id="18259" name="18259" value="1">
+          <input type="hidden" id="18260" name="18260" value="1">
+          <input type="hidden" id="18269" name="18269" value="1">
+          <input id="18261" name="18261" type="hidden">
+          <input id="11240" name="11240" type="text" class="text" maxlength="1024" value="" placeholder="姓名"> <span name="whirValidator" validatorfor="11240" required="True" requiredmsg="姓名为必填" regexp="" errmsg="姓名验证不通过"></span> 
+        </div>
+        <div class="rgtList">
+          <input id="11242" name="11242" type="text" class="text" maxlength="1024" placeholder="手机号码" only="true" formid="47188"> <span name="whirValidator" validatorfor="11242" required="true" onlymsg="手机号码已经被使用" requiredmsg="手机号码为必填" regexp="^(1[3|4|5|8])(\d){9}$" errmsg="手机号码验证不通过"></span> 
+        </div>
+        <div class="rgtList">
+          <input id="11243" name="11243" type="text" class="text" maxlength="1024" only="true" formid="39067" placeholder="电子邮箱"> <span name="whirValidator" validatorfor="11243" required="true" requiredmsg="邮箱为必填" onlymsg="邮箱已经被使用" regexp="^\w+([-+.]\w+)*@\w+([-.]\\w+)*\.\w+([-.]\w+)*$" errmsg="邮箱验证不通过"></span> 
+        </div>
+        <div class="rgtList">
+          <input id="11239" name="11239" type="password" class="text" maxlength="1024" placeholder="登录密码"> <span name="whirValidator" validatorfor="11239" required="True" requiredmsg="登陆密码为必填" regexp="" errmsg="登陆密码验证不通过"></span> 
+        </div>
+        <div class="rgtList">
+          <input id="txt_qrmm" class="text" type="password" placeholder="再次输入登录密码">
+        </div>
+        <div class="rgtList">
+          <input id="15893" name="15893" type="text" readonly="readonly" placeholder="出生年月" onclick="WdatePicker({dateFmt:&#39;yyyy-MM-dd&#39;})" onchange="ChangeCsrq()" class="text"> <span name="whirValidator" validatorfor="15893" required="true" requiredmsg="出生年月为必填" regexp="" errmsg="出生年月验证不通过"></span> 
+          <input id="18272" name="18272" type="hidden" class="text" maxlength="1024" value="">
+        </div>
+        <!--<div class="rgtList rgtyzm">
+          <input id="txt_sryzm" class="text codeinput" type="text" placeholder="输入验证码" />
+          <a style="cursor:pointer" onclick="FaSong();time(this);" class="codebtn">获取邮箱验证码</a>
+          <input type="hidden" id="txt_yzm">
+        </div>-->
+        
+        <div class="rgtList rgtRadio2">
+          <input type="hidden" id="11241" name="11241" value=""> 
+          <label for="radio-b" mydata="男"><input groupname="11241" name="11241" id="radio-b" value="男" type="radio">男</label>
+          <label for="radio-g" mydata="女"><input groupname="11241" name="11241" id="radio-g" value="女" type="radio">女</label>
+           <span name="whirValidator" validatorfor="11241" required="True" requiredmsg="性别为必选"></span>
+
+           <script type="text/javascript">
+               $(".rgtRadio2 label").click(function() {
+                   $(".rgtRadio2 label").removeClass("on");
+                   $(this).addClass("on");
+                   $("#11241").val($(this).attr("mydata"));
+               })
+
+             
+           </script>
+        </div>
+        <label class="rgtLabel">
+        <label for="checkTy">
+        <input id="checkTy" type="checkbox">
+        </label>
+        <span>
+        我已阅读并同意 <a href="javascript:XieYi()">[隐私协议]</a>
+        </span>
+        </label>
+        <a class="rgtBtn" href="javascript:registerSubmit();">立即注册</a>
+        <div id="div_alert_zc" class="rgtPrompt">
+  
+         </div>
+      </div>
+      <div class="clear"></div>
+      
+   </div>
+   <script type="text/javascript">
+     //自定义选择框
+    $(".registerBox .rgtLabel input").click(function(){
+      $(this).parent().toggleClass("on");
+    })
+   </script>
+<!--注册页面-->
+   
+   <!--注册成功页面-->
+   <div class="PopupBox Zcok">
+       <a href="javascript:;" class="closeBtn"></a>
+       <div class="OkCon">
+          <div class="Oktitle"></div>
+          <p id="p_ts"></p>
+          <!--<a href="javascript:;" class="goOther">立即前往</a>-->
+       </div>
+   </div>
+   <!--协议页面-->
+   <div class="PopupBox MyZcok">
+       <a href="javascript:;" class="closeXy" style="position:absolute; top:20px; right:20px; height:17px; width:17px; display:block; background:url(/cn/images/colseBtn.jpg) no-repeat;"></a>
+       <div class="OkCon">
+          <!-- <div class="Oktitle"></div> -->
+          
+          <div id="p_xy" class="p_xy" style="display:none"><p>	为了表明我们对保护您的隐私的坚定承诺，HCG和成卫浴特此制订了本隐私声明。以下内容说明了HCG和成卫浴网站家族（简称“网站”）的信息收集和传播行为准则。请注意，如果您经由HCG和成卫浴网站（包括任何HCG和成卫浴子公司网站）访问外部链接，则此类外部网站可能适用特定的不同隐私政策。我们希望您完整阅读所有适用的隐私政策。</p><p>	1.个人资料的搜集</p><p>	访问HCG和成卫浴网站上的某些产品购买版块时，您可能需要注册后才能享受某些服务，或者当您想了解更多关于此类产品的信息时，HCG和成卫浴可能会收集您的姓名、电话号码、电子邮件地址、出生日期、家庭或公司邮寄地址等个人信息（简称“个人信息”）。如果您决定预订或购买我们的产品/服务，我们可能还需收集其他信息，例如您的信用卡或借记卡账号和有效期。HCG和成卫浴将为您提供限制使用和披露您的个人信息的选择和方式，以防HCG和成卫浴出于最初收集目的之外的其他目的使用或披露您的个人信息。</p><p>	在其他时候，HCG和成卫浴可能会收集不能用于识别您的身份的信息。例如，我们可能会汇总您和访问我们网站的其他用户的非个人信息。汇总的信息不会包含任何可直接与您联系起来的信息。</p><p>	2.HCG和成卫浴如何收集个人信息</p><p>	HCG和成卫浴可以使用各种工具来收集与您、您的计算机接入点和您用于连接至我们网站的浏览器相关的信息。例如，您访问我们的网站时，我们会在您的计算机或设备的硬盘或其他存储设备上置入一种叫做Cookie的小文本文件。我们可能会使用Cookie来个性化您与我们网站的交互行为。您并非必须接受我们的Cookie，您可以通过浏览器设置来限制使用Cookie，您还可以删除置入到您的硬盘或其他存储设备的Cookie。如果您不接受或删除我们的Cookie，我们网站的某些区域可能会需要更长时间来工作，或者无法正常工作。</p><p>	根据不同欧盟国家（包括但不限于英国、爱尔兰、西班牙、法国、德国、意大利、比利时和荷兰）的法律，在个人清晰并充分了解处理其个人数据的目的并同意后，方可使用Cookie。至少在上述提及的国家，只要您采取积极行动，您就可以使用浏览器设置来提供有效同意意见。使用HCG和成卫浴网站之前，建议您检查您当前的浏览器设置，从而确保这些设置表明您同意HCG和成卫浴在您的设备上置入Cookie。HCG和成卫浴的Cookie披露声明详见此处。如需有关具体浏览器Cookie选项的更多信息，请访问http://www.allaboutcookies.org/。</p><p>	HCG和成卫浴还可能会在您每次访问我们的网站时从您的浏览器收集其他信息。我们可能会收集的信息包括您访问的页面、您在每个网页或网站部分上的停留时间、您点击的促销或广告，以及您在使用我们网站时采取的其他行动。这些信息可能会包括您的互联网协议地址（IP地址）、浏览器类型、浏览器访问我们网站的时间，以及您可能使用的链接至我们网站的任何其他网址。</p><p>	我们的互联网服务提供商（定义见下文）也可能会使用其他标准网络技术分析您在访问我们网站时的行为。这些技术包括网络“信标”、“像素标签”、“清晰GIF”等。这些技术有助于我们了解产品和服务宣传营销活动的效果，对我们网站提供的服务进行定制，帮助我们以最佳方式使用网站内容、产品和服务。包括IP地址在内的一些信息可能会存储在我们的互联网服务提供商的服务器日志中，可供长期使用。</p><p>	虽然HCG和成卫浴采取一切负责任的措施保护网站访问者的隐私，但是HCG和成卫浴无法承诺其当前在线应用程序设计能够适应所有浏览器设置，或满足所有个人浏览器的首选项。具体而言，HCG和成卫浴尚未实施实现“不跟踪”浏览器信号所必需的程序变更。随着HCG和成卫浴在线应用程序设计的不断优化，HCG和成卫浴将采取一切合理措施在未来满足这类请求。请经常查看本隐私政策，了解本主题方面的更新。</p><p>	此外，HCG和成卫浴的互联网服务提供商或授权第三方（定义见下文）可能会使用允许随时跨网站收集个人信息的技术。HCG和成卫浴建议您阅读您访问的此类网站上发布的所有隐私政策，从而更好地理解其保护隐私的做法。</p><p>	3.选择</p><p>	针对您的个人信息能否（a）披露给第三方，或（b）用于非信息收集初始目的或其后由您授权的目的，HCG和成卫浴将向您提供选择机会（接受/放弃）。</p><p>	4.我们对您的个人及非个人信息的使用和披露</p><p>	有时候，HCG和成卫浴可能会利用独立公司（“互联网服务提供商”或“经授权的第三方”）的服务为您提供某些服务，包括但不限于网站托管服务、信用卡处理、订单处理、送货服务和访客调查问卷。HCG和成卫浴可能会以恰当方式与互联网服务提供商共享您的个人信息。未经您的许可，HCG和成卫浴不会与外部第三方共享您的个人信息，但为了提供您通过HCG和成卫浴网站请求的产品和服务而必须共享个人信息的情况除外。</p><p>	HCG和成卫浴可能会使用您的个人信息通过普通邮件、电子邮件（如果您选择接收HCG和成卫浴发送的电子邮件）或电话联系您，告知您HCG和成卫浴的最新特别活动、新服务、产品当前信息或其他您可能感兴趣的优惠活动。如果您是一家计划在我们的场地内开展会议或活动的企业或机构，则HCG和成卫浴也可能会与活动组织方共享您的个人信息。HCG和成卫浴还可能会使用回信电子邮件地址来对您向我们发送的电子邮件做出回复。您的电子邮件地址不会被用于任何其他目的，也不会与外部第三方共享以用于其直接营销目的。HCG和成卫浴还可能会使用您的IP地址来帮助保护HCG和成卫浴及其互联网服务提供商免受欺诈行为损害。</p><p>	其他对您的非个人和个人信息的使用有助于HCG和成卫浴根据您的需求定制产品和服务，帮助组织和管理我们与您或您企业的关系，开展业务，为您提供客户和访客支持，执行信息收集时向您描述的功能，以及执行我们网站的使用条款。</p><p>	我们也可能会利用非个人汇总信息来改善我们的网站。例如，我们的互联网服务提供商可能会向我们报告，称我们网站的某个区域有特定数量的访客，或一定数量的企业或个人在我们网站的特定区域填写了注册表格。这些信息也可能会用于分析我们的业务和广告模式的效果。</p><p>	如果您提交了简历或寻求满足其他人员招聘需求，我们会将这些信息仅用于与您当前或未来人员招聘需求申请相关的方面，我们也可能会将您的简历或申请信息与我们的有您符合资格的人员招聘需求的业务合作伙伴或分支机构共享。</p><p>	在以下必要条件下，HCG和成卫浴也可能会透露您的个人信息：（a）遵守传票或法庭命令；</p><p>	（b）与执法部门或其他政府机构合作；</p><p>	（c）建立或行使我们的合法权利；</p><p>	（d）保护我们的公司、员工、承包商、提供商和客户的财产或安全；（e）防范法律索赔；</p><p>	（f）协助进行内部和外部调查；</p><p>	（g）法律另有规定或允许的其他情况。HCG和成卫浴可能会出于我们公司的出售或并购或任何涉及我们资产的部分或全部出售或转让交易披露您的个人信息。</p><p>	5.数据存储和安全</p><p>	HCG和成卫浴采取合理措施确保互联网服务提供商已实施物理、电子、技术、组织和程序上的安全保障措施，从而协助保护您的个人信息，防止未经授权的访问和披露。只有经我们授权的人员和为HCG和成卫浴执行法定业务职能的互联网服务提供商才有权访问您的个人信息。虽然我们倾尽努力，但是互联网有其固有的安全风险。HCG和成卫浴无法承诺、您也不应期望您的个人信息、个人搜索和其他通信始终保持安全。您应小心处理和披露您的个人信息，以及访问我们网站服务所需的用户名和密码。</p><p>	6.儿童和数据收集</p><p>	HCG和成卫浴网站是面向普通受众的网站。HCG和成卫浴网站内容不适宜于13岁以下儿童浏览。我们不会故意收集儿童的个人信息。如果HCG和成卫浴或其互联网服务提供商发现有儿童未经成人许可向我们提供了个人信息，我们将从数据库中删除此类信息。</p><p>	7.如何访问和更改HCG和成卫浴收集的个人信息</p><p>	您首次通过我们网站提供注册信息时，我们可能会向您提供订阅和接收与我们产品和服务相关的更多信息的机会。我们发送给您的每一封商业电子邮件中均会为您提供放弃继续接收此类邮件的机会。处理您的放弃请求可能需要十（10）个工作日。在某些情况下，在您更改您的信息首选项之前，我们可能会已经与经授权的第三方共享了您的信息，因此，您可能会在选择放弃之后的一段时间内暂时继续收到电子邮件。根据美国联邦贸易委员会（FTC）电子邮件合规指导，我们可以向您发送交易和关系电子邮件，而不为您提供选择放弃接收此类电子邮件的机会。</p><p>	对于居住在欧盟的网站用户，我们必须依法告知您，您的个人信息可能会被来自世界其他地区的个人访问，而欧盟委员会已确认部分此类国家提供的数据保护级别可能与您的所在国不尽相同。向我们提供您的个人信息即表示您同意我们按照HCG和成卫浴隐私政策对其进行使用，包括按照当地法律在包括但不限于美国的全球不同司法管辖区内传输您的个人信息。</p><p>	美国的数据隐私法律可能无法提供与欧盟法律相同的个人信息保护级别，但是请放心，HCG和成卫浴将继续遵守本隐私政策和其他与个人信息相关的法律所规定的原则。HCG和成卫浴将努力保护个人数据的完整性、机密性和安全性，并对此类个人信息采取足够级别的保护。</p><p>	8.数据完整性</p><p>	HCG和成卫浴只出于个人信息收集目的或经您授权的目的对个人信息进行处理。出于这些目的，HCG和成卫浴将采取合理步骤确保个人信息对预期用途的可靠性。</p><p>	9.执行</p><p>	HCG和成卫浴采用自我评估的方式确保遵守本隐私政策，并定期验证政策的正确性、对所涉信息的全面性，并验证本隐私政策是否在显著位置显示、完整实施、可以访问以及符合欧盟制订的隐私原则。我们鼓励有兴趣的人士通过提供的联系方式提出问题，我们会进行调查，并尝试解决与按照这些原则使用和披露个人信息相关的投诉和纠纷。</p><p>	10.一般信息和隐私支持联系方式</p><p>	HCG和成卫浴可能会随时更新本隐私政策，建议您在每次访问我们网站时均予以阅读。HCG和成卫浴承诺保护您的个人隐私。如果您有任何与我们保护您的个人隐私的措施相关的问题或意见，或希望了解与HCG和成卫浴隐私保护承诺相关的更多信息，请联系我们。</p></div>
+          
+       </div>
+   </div>
+
+   <script type="text/javascript">
+       $(".goOther").click(function () {
+           $(".PopupBox").hide();
+           $(".LoginBox").show();
+       })
+       $('.closeXy').click(function(){
+        $('.MyZcok').hide();
+       });
+
+
+       function XieYi(nr) {
+           $("#p_xy").css("display", "block");
+          $(".PopupBox").hide();
+          $(".registerCon").show();
+          $(".registerBox").show();
+          $(".MyZcok").show();
+       }
+   </script>
+   <!--注册成功页面-->
+</div>
+</form>
+<!--注册页面-->
+   <script type="text/javascript">
+       function MyAlert(nr,stateid) {
+           $("#p_ts").html("" + nr + "");
+           console.log(stateid);
+           $(".PopupBox").hide();
+           $(".registerBox").show();
+           $(".registerCon").hide();
+           $(".Zcok").show();
+           if(stateid==2)
+           {
+            $(".Zcok .Oktitle").addClass("Yes");
+           }
+           else
+           {
+            $(".Zcok .Oktitle").removeClass("Yes");
+           }
+       }
+   </script>
+
+
+    <script type="text/javascript">
+        //注册检验
+        function registerSubmit() {
+            if ($("#checkTy").prop("checked") == false) {
+                $("#div_alert_zc").html("请勾选协议");
+                return;
+            }
+            else {
+                $("#div_alert_zc").html("");
+            }
+            if($("#18257").val()=="")
+            {
+                $("#div_alert_zc").html("请选择账户类型");
+                return;
+            }
+            else {
+                $("#div_alert_zc").html("");
+            }
+            if ($("#txt_qrmm").val() == "") {
+                $("#txt_qrmm").css("border", "1px solid red");
+            }
+            else {
+                $("#txt_qrmm").css("border", "");
+            }
+            if ($("#11239").val() != $("#txt_qrmm").val()) {
+                $("#div_alert_zc").html("两次密码不一致");
+                return;
+            }
+            else {
+                $("#div_alert_zc").html("");
+            }
+            if ($("#11241").val() == "") {
+                $("#div_alert_zc").html("请选择性别");
+                return;
+            }
+            else {
+                $("#div_alert_zc").html("");
+            }
+
+//            if ($("#txt_sryzm").val() == "" || $("#txt_sryzm").val() == "输入验证码") {
+//                alert("验证码为必填");
+//                return;
+//            }
+//            if ($("#txt_sryzm").val() != $("#txt_yzm").val()) {
+//                alert("验证码错误");
+//                return;
+            //            }
+            
+            whir.form.submit('whir_16', '1', '0', '16');
+        }
+
+
+        function SendEmail() {
+            $.ajax({
+                url: "/Ajax/SendEmail.aspx", //没有用到 wtl:resource 置标时用此路径
+                type: "POST",
+                cache: false,
+                data: { email: "" + $("#18257").val() + "", fsyx: "" + escape($("#11243").val()) + "" },
+                success: function (data) {
+                    if (data == 1) {
+                        //alert("请进入邮箱激活账户！");
+                    }
+                    else {
+                        //alert("发送失败！");
+                    }
+                },
+                error: function () {
+                    //alert("失败");
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        var wait = 60;
+        function time(obj) {
+            if ($("#11243").val() == "" || $("#11243").val() == "输入邮箱") {
+                return;
+            }
+            else {
+                if (!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test($("#11243").val())) {
+                    return;
+                }
+            }
+            if (wait == 0) {
+                $(obj).click(function () {
+                    FaSong();
+                    time(this);
+                })
+                $(obj).html("获取邮箱验证码");
+                wait = 60;
+            } else {
+                $(obj).removeAttr('onclick');
+                $(obj).html("重新发送(" + wait + ")");
+                wait--;
+                setTimeout(function () {
+                    time(obj);
+                },
+            1000)
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function FaSong() {
+            if ($("#11243").val() == "" || $("#11243").val() == "输入邮箱") {
+                alert("邮箱为必填");
+                return false;
+            } else {
+                if (!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test($("#11243").val())) {
+                    alert("请填写正确的邮箱"); return false;
+                }
+            }
+            var str = "0123456789";
+            var sjs = '', i;
+            for (j = 1; j <= 4; j++) {
+                i = parseInt(10 * Math.random());
+                sjs = sjs + str.charAt(i);
+            }
+            $("#txt_yzm").val("" + sjs + "");
+            $.ajax({
+                url: "/Ajax/GetYzm.aspx", //没有用到 wtl:resource 置标时用此路径
+                type: "POST",
+                cache: false,
+                data: { yzm: "" + sjs + "", email: "" + $("#11243").val() + "" },
+                success: function (data) {
+                    if (data == "0") {
+                        alert("验证码已发送至邮箱，请留意查看！！");
+                    }
+                    else {
+                        alert("发送失败！");
+                    }
+                },
+                error: function () {
+                    //alert("失败");
+                }
+            });
+        }
+    </script>
+
+
+<script type="text/javascript">
+    $(function () {
+        //异步判断是否登录
+        $.ajax({
+            url: "/label/member/islogin.aspx",
+            cache: false,
+            success: function (data) {
+                var result = eval("[" + data + "]")[0]; //值: [{'islogin':'1','username':'张三'}]
+                if (result.islogin == "1") { // 已经登录
+
+                }
+                else {
+                    $(".Top .RightBox .BtnMember").click(function () {
+                        $(".LoginBox").show();
+                    })
+                }
+            }
+        })
+    })
+
+
+var iH=$("body").height();
+ $(".LoginBox").height(iH);
+ $(".registerBox").height(iH);
+// $(".Top .RightBox .BtnMember").click(function(){
+//	   $(".LoginBox").show();
+//	 })
+ $(".btn_reg").click(function(){
+	   $(".PopupBox").hide();
+	   $(".registerBox").show();
+	   $(".registerCon").show();
+	 })
+	 $(".LoginCon .closeBtn").click(function () {
+	     $(".LoginBox").hide();
+	     //location.reload();
+	 })
+ $(".registerBox .closeBtn").click(function(){
+     $(".registerBox").hide();
+     //location.reload();
+	 })	
+ $(".rgtLeft li").each(function(i) {
+	$(this).click(function(){
+		$(this).find(".youType").addClass("on");$(this).siblings().find(".youType").removeClass("on"); 
+		})
+    
+});
+// $(".rgtBtn").click(function(){
+//	   $(".registerCon").hide();
+//	   $(".Zcok").show();
+//	 })
+
+	  
+if( !('placeholder' in document.createElement('input')) ){  
+   
+    $('input[placeholder],textarea[placeholder]').each(function(){   
+      var that = $(this),   
+      text= that.attr('placeholder');   
+      if(that.val()===""){   
+        that.val(text).addClass('placeholder');   
+      }   
+      that.focus(function(){   
+        if(that.val()===text){   
+          that.val("").removeClass('placeholder');   
+        }   
+      })   
+      .blur(function(){   
+        if(that.val()===""){   
+          that.val(text).addClass('placeholder');   
+        }   
+      })   
+      .closest('form').submit(function(){   
+        if(that.val() === text){   
+          that.val('');   
+        }   
+      });   
+    });   
+  }
+</script>
+
+<div id="span_merkliste_box" style=" width:500px; height:500px; position:fixed;z-index:999; right:50%; margin-right:-250px; top:150px; display:none;"><img src="./和成（中国）有限公司_files/icon_jia_bg.png"></div>
+<!--<script>
+	$(".span_merkliste").click(function(){
+		
+		$("#span_merkliste_box").show().animate({
+				"right":30,
+				"top":-100,
+				"height":"0",
+				"width":"0",
+				
+			},1500,function(){
+					$("#span_merkliste_box").css({
+							"right":"50%",
+							"marginRight":"-250px",
+							"top":"100px",
+							"height":"500px",
+							"width":"500px",
+							
+						}).hide();
+				});
+	});
+</script>-->
+
+<div class="bdsharebuttonbox" id="baidushare" style="display:none;"><a href="javascript:void(0);" class="bds_mail" data-cmd="mail" title="分享到邮件分享">邮件分享</a><a href="javascript:void(0);" class="bds_more" data-cmd="more"></a></div>
+<script>
+//    window._bd_share_config = {
+//        "common": {
+//            "bdSnsKey": {},
+//            "bdUrl": document.URL,
+//            "bdText": escape("和成（中国）有限公司"),
+//            "bdMini": "1",
+//            "bdMiniList": false,
+//            "bdPic": "",
+//            "bdStyle": "0",
+//            "bdSize": "16"
+//        },
+//        "share": { "bdSize": 16 },
+//        "image": { "viewList": ["mail"], "viewText": "", "viewSize": "16" },
+//        "selectShare": {
+//            "bdContainerClass": null,
+//            "bdSelectMiniList": ["mail"]
+//        }
+//    }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<a href="mailto:name@domain?subject=%E5%92%8C%E6%88%90%EF%BC%88%E4%B8%AD%E5%9B%BD%EF%BC%89%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;body=http%3A%2F%2Fwww.hcg.com.cn%2F" id="mailtoA" style="display:none"></a>
+<script type="text/javascript">
+	$(function(){
+		$("#mailtoA").attr("href","mailto:name@domain?subject=和成（中国）有限公司&body="+encodeURIComponent(location.href));
+		var calcTimes = 0;
+	 	var sharetimes = setInterval(function(){
+			//$(".jiathis_button_email").attr("onclick","javascript:$(\".bds_mail\")[0].click()");
+			$(".jiathis_button_email").attr("onclick","javascript:$(\"#mailtoA\")[0].click()");//mailto:name@domain?subject=%desc%&body=%url%
+			
+			if(calcTimes++ > 10){
+				clearInterval(sharetimes);
+			}
+		},500)
+	});
+</script>
+
+
+<script type="text/javascript">
+//整站无图处理
+    jQuery.each(jQuery("img"), function (i, n) { jQuery(n).error(function () { n.src = '/cn/uploadfiles/nopic.jpg'; }); n.src = n.src; });
+
+//返回顶部
+$(function(){
+        $(function () { 
+            //当点击跳转链接后，回到页面顶部位置
+ 
+            $(".toTop,.Copyright .logo_icon").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+    });
+//内页banner图片高度赋值
+var iH=winW/1920*450;
+   $(".HomeBan").height(iH);
+   $(".HomeBan li a").height(iH);
+window.onorientationchange=function(){
+	     switch(window.orientation) {
+			    case 0:
+				window.location.reload();
+				break;
+				case -90:
+				window.location.reload();
+				break;
+				case 90:
+				window.location.reload();
+				break;
+				case 180:
+				window.location.reload();
+				break;
+			 }
+	  }
+</script>
+
+<script type="text/javascript" src="./和成（中国）有限公司_files/jia.js.下载" charset="utf-8"></script><script type="text/javascript" src="./和成（中国）有限公司_files/plugin.client.js.下载" charset="utf-8"></script>
+
+
+
+<script type="text/javascript" src="./和成（中国）有限公司_files/common.js(1).下载"></script>
+
+<script src="./和成（中国）有限公司_files/jquery.lazyload.js.下载" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $(".HomeBan img,.HomeBanner img").lazyload({
+                skip_invisible : false,
+                effect : "fadeIn"
+            });
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        $(function() {
+            $.ajax({
+                url: "/label/member/getinfo.aspx", //没有用到 wtl:resource 置标时用此路径
+                type: "POST",
+                async: false,
+                cache: false,
+                data: "",
+                success: function(data) {
+                    var objs = eval(data);
+                    for (var i = 0; i < objs.length; i++) {//设值进控件
+                        if (objs[i].Key == "11249") {
+                            if (objs[i].Value != "-1") {
+                                loginout_Top();
+                            }
+                        }
+                    }
+                },
+                error: function() {
+                    //alert("登录失败");
+                }
+            });
+        })
+
+        //会员异步退出
+        function loginout_Top() {
+            $.ajax({
+                url: "/label/member/loginout.aspx?t=" + new Date().getMilliseconds(),
+                success: function(data) {
+                    //alert("退出成功");
+                    location.reload();
+                }
+            });
+        }
+    </script>
+
+<script>
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?53f62d51544b676c12c7114ff11e1223";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+</script>
+
+
+<!--bottom End-->
+<script type="text/javascript">
+    if ("" != "") {
+        $(".ResetBox").show();
+    }
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?53f62d51544b676c12c7114ff11e1223";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div class="bds-credit-pop" id="bds-credit-pop" style="width: 222px; height: 250px; z-index: 2147483647; overflow: hidden; position: fixed; top: 80px; right: 0px;"><iframe src="javascript:;" allowtransparency="true" border="0" frameborder="no" scrolling="no" height="250px" width="222px" style="display: block; margin: auto; position: absolute; top: 0px; right: 0px;" src="./和成（中国）有限公司_files/saved_resource(1).html"></iframe></div></body></html>

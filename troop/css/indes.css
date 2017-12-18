@@ -1,0 +1,264 @@
+/*...通用样式..*/
+body,ul,h1,h2,h3,p,li{
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display:table;
+	clear:both;
+}
+.header,.banner,.containt,.footer{
+	margin:0 auto;
+	width: 86.73647469%;
+}
+.warper{
+	width: 100%;
+}
+.nav li{
+	list-style: none;
+}
+body{
+	font-size: 1rem;
+}
+.nav a,.banner-text ul li a{
+	text-decoration: none;
+}
+.logo img{
+	width:100%;
+}
+.pic1,.pic2,.pic3,.NextEvent-top p,.pic-31{
+	float: left;
+}
+/*...通用样式..*/
+
+/*...header-inner样式...*/
+.header-inner{
+	background-color:#000000;
+
+}
+.header{
+	padding: 1.5625rem;
+}
+.logo,.nav,.nav li{
+	float: left;
+}
+
+.nav{
+	width: 45.271629778%;
+	padding-top: 2.6875rem;
+}
+.nav li{
+	line-height: 100%;
+}
+
+.logo{
+	width: 46.07645871%;
+	margin-right: 6.53923541%;
+}
+
+.nav li a{
+	font-size: 0.875rem;
+	font-family: Ebrima;
+	letter-spacing: -1.4px;
+	font-weight:bold;
+}
+.nav li a:hover{
+	color: red;
+}
+.btn1 a{
+	color: #c22700;
+}
+.btn2 a,.btn3 a,.btn4 a,.btn5 a,.btn6 a{
+	color: #7f7f7f;
+}
+.nav .btn1,.nav .btn2 ,.nav .btn3 ,.nav .btn4,.nav .btn5{
+	margin-right: 6.444444444%;
+}
+.nav .btn6{
+	margin-right: 5.33333333%;
+}
+
+/*...header-inner样式...*/
+
+/*...banner-inner样式...*/
+.banner-inner{
+	background-image:url(../images/banner_03.jpg);
+}
+.banner{
+	position: relative;
+}
+
+.banner-text h1{
+	font-size: 1.875rem;
+	font-family:DilleniaUPC Regular;
+	padding-bottom: 1.375%;
+	color: #ffffff;
+}
+.banner-text p{
+	font-size:0.875rem;
+	font-family:Arial Rounde...;
+	line-height: 1.57142857142rem;
+	color: #7d7f7f;
+	font-weight:600;
+}
+.banner-text{
+	width: 59.15492957746479%;
+	padding-top: 4.0625rem;
+	padding-right: 4.32595573440644%;
+	padding-left: 2.91750503018109%;
+}
+
+.banner-pic{
+	width:35.2112676%; 
+	position: absolute;
+	top: -8.6218966%;
+	left: 65.392354124%
+}
+.banner-text ul{
+	width: 1.625rem;
+	margin-bottom: 4.75rem;
+}
+.banner-text ul li{
+	width: 100%;
+}
+.banner-text p a{
+	color:#c22700; 
+}
+
+
+/*...banner-inner样式...*/
+
+/*...containt-inner样式...*/
+.containt-inner{
+	background-image: url(../images/containt-inner_07.jpg);
+	height:896px;
+}
+.containt{
+	padding-left: 30px;
+	width: 1061px;
+}
+.pic1{
+	margin-left:px;
+	position: relative;
+}
+.pic1 div{
+	position: absolute;
+	left: 22px;
+	top: 114px;
+}
+.pic2{
+	margin: 0px 20px 0px 20px;
+	position: relative;
+}
+.pic2 div{
+	position: absolute;
+	left: 22px;
+	top: 114px;
+}
+.pic3{
+	position: relative;
+}
+.pic3 div{
+	position: absolute;
+	left: 22px;
+	top: 114px;
+}
+.main-top h1,.moin-top h1{
+	font:34px 微软雅黑;
+	color:#fcfcfc;
+	padding-top: 45px;
+	padding-bottom: 18px;
+}
+.pic-31,.pic-23{
+	width: 81px;
+	height: 194px;
+}
+.main-wenzi,.bottom-wenzi{
+	width: 570px;
+	padding-right: 39px;
+}
+.main-wenzi p,.bottom-wenzi p{
+	font:14px 微软雅黑;
+	color: #888888;
+	line-height: 171%;
+}
+.main-wenzi ul{
+	padding-left: 81px;
+	padding-top: 24px;
+}
+.main-bottom{
+	padding-top: 60px;
+}
+.pic-23,.bottom-wenzi,.bottom-wenzi img{
+	float: left;
+}
+
+.moin-top li a{
+	font:14px 微软雅黑;
+	color: #ffffff;
+}
+.moin-top li{
+	height: 30px;
+	border-bottom: 1px #888888 dashed;
+	text-align: left;
+	padding-top: 8px;
+	width: 321px;
+}
+.containt-left,.containt-right{
+	float: left;
+}b
+.moin-bottom{
+	width: 270px;
+	height: 222px;
+	background-color: #0e0f0f;
+	margin-top: 28px;
+	padding: 22px 20px 0 21px;
+}
+.moin-bottom h1{
+	font:24px 微软雅黑;
+	color:#ffffff;
+	padding-bottom: 15px;
+}
+.moin-bottom p{
+	width:300px; 
+}
+.moin-bottom h2,.moin-bottom p{
+	font:14px 微软雅黑;
+	color: #888888;
+}
+.containt-pic..containt-left,.containt-right{
+	float: left;
+}
+/*...containt-inner样式...*/
+
+/*...footer-inner样式...*/
+.footer-inner{
+	background-image: url(../images/footer-inner_07_07_10.jpg);
+	height:150px;
+}
+.footer{
+	width: 1051px;
+}
+.copyright,.footer-icon,.footer-icon li{
+	float: left;
+}
+.copyright{
+	margin-left: 204px;
+	padding-top: 37px;
+
+}
+.footer-icon li{
+	padding-right: 10px;
+}
+.footer-icon{
+	padding-left: 280px;
+	padding-top: 48px;
+}
+.copyright p{
+	font:14px 微软雅黑;
+	color: #888888;
+	font-weight: 600;
+}
+/*...footer-inner样式...*/
